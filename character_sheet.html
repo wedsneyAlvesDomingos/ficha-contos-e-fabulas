@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bokislad C.S.</title>
+        <link href="character_sheet.css" rel="stylesheet">
+        <script src="main.js" ></script>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Montserrat:wght@100&family=Nunito+Sans:wght@200&family=Qwitcher+Grypen&family=Rajdhani:wght@300&family=Silkscreen&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+        </header>
+        <!--corpo da ficha -->
+        <main class="ficha">
+            <!--nome -->
+            <div class="ficha__nome">
+              <label class="ficha__nome__label">Nome</label>
+              <input type="text" class="ficha__nome__input">
+            </div>
+             <!--especie -->
+            <div  class="ficha__especie">
+                <label for="exampleDataList" class="ficha__especie__label">Espécie</label>
+                <input class="ficha__especie__input" list="especiesListOptions">
+                <datalist id="especiesListOptions">
+                  <option value="Anão">
+                  <option value="Bestial">
+                  <option value="Constructo">
+                  <option value="Draconiano">
+                  <option value="Elfo">
+                  <option value="Feérico">
+                  <option value="Halfling">
+                  <option value="Humano">
+                  <option value="Meio-Celestial">
+                  <option value="Meio-Demônio">
+                  <option value="Meio-Elfo">
+                  <option value="Meio-Gênio">
+                  <option value="Meio-Troll">
+                  <option value="Troll">
+                </datalist>
+              </div>
+            <!--classes -->
+            <div  class="classes">
+              <label for="exampleDataList" class="ficha__classes__label">Classe</label>
+              <input class="ficha__classes__input" list="datalistOptions">
+              <datalist id="datalistOptions">
+                <option value="Aprendiz">
+                <option value="Combatente">
+                <option value="Noviço">
+                <option value="Iniciado">
+                <option value="Feiticeiro">
+              </datalist>
+            </div>
+            <!--exp -->
+            <div id="exp" class="exp">
+              <label for="inputZip" class="ficha__exp__label">Exp</label>
+              <input type="number" min="1" max="1000000" class="ficha__exp__input" id="inputZip">
+            </div>
+                
+            <form  class="" id="dados">
+            <!--antecedente -->
+                <div id="antecedente" class="ficha__dados__antecedentes">
+                    <label for="exampleDataList" class="ficha__dados__antecdentes__label">Antecedente</label>
+                    <input class="ficha__dados__antecdentes__input" list="antecedenteDatalistOptions"  >
+                    <datalist id="antecedenteDatalistOptions">
+                      <option value="Abençoado">
+                      <option value="Acadêmico">
+                      <option value="Acólito">
+                      <option value="Acrobata">
+                      <option value="Adestrador de Animais">
+                      <option value="Amaldiçoado">
+                      <option value="Aminpesico">
+                      <option value="Arqueologista">
+                      <option value="Artesão">
+                      <option value="Assistente de Laboriatório">
+                      <option value="Astrônomo">
+                      <option value="Ator">
+                      <option value="Bandido">
+                      <option value="Barbeiro">
+                      <option value="Batedor">
+                      <option value="Bibliotecário">
+                      <option value="Caçador de Recompensas">
+                      <option value="Capanga">
+                      <option value="Carteiro">
+                      <option value="Camponês">
+                      <option value="Charlatão">
+                      <option value="Circense">
+                      <option value="Comerciante">
+                      <option value="Cortesão">
+                      <option value="Curandeiro">
+                      <option value="Detetive">
+                      <option value="Eremita">
+                      <option value="Escudeiro">
+                      <option value="Espião">
+                      <option value="Estudante de Magia">
+                      <option value="Fanático">
+                      <option value="Forasteiro">
+                      <option value="Gladiador">
+                      <option value="Guarda">
+                      <option value="Herdeiro">
+                      <option value="Heroico">
+                      <option value="Jornaleiro">
+                      <option value="Marujo">
+                      <option value="Médico de Beco">
+                      <option value="Menestrel">
+                      <option value="Minerador">
+                      <option value="Navegador">
+                      <option value="Nobre">
+                      <option value="Barbeiro">
+                      <option value="Nômade">
+                      <option value="Órfão">
+                      <option value="Peregrino">
+                      <option value="Prisioneiro">
+                      <option value="Refugiado">
+                      <option value="Taverneiro">
+                      
+                    </datalist>
+                </div>
+                <!--especialização -->
+                <div id="especializcao" class="ficha__dados__especializacao">
+                    <label for="exampleDataList" class="ficha__dados__especializacao__label">Especialização</label>
+                    <input class="ficha__dados__especializacao__input" list="specializationDataList"  >
+                    <datalist id="specializationDataList">
+                      <option value="Assassino">
+                      <option value="Barbaro">
+                      <option value="Bruxo">
+                      <option value="Caçador">
+                      <option value="Caçador de Demônios">
+                      <option value="Cavaleiro">
+                      <option value="Cavaleiro Arcano">
+                      <option value="Elementalista">
+                      <option value="Erudito">
+                      <option value="Exorcista">
+                      <option value="Inquisidor">
+                      <option value="Invocador">
+                      <option value="Mago">
+                      <option value="Metamorfo">
+                      <option value="Monge">
+                      <option value="Profano">
+                      <option value="Professor">
+                      <option value="Sarcedote">
+                      <option value="Xamã">
+                    </datalist>
+                </div>
+                <!--profissão -->
+                <div id="profissao" class="ficha__dados__profissao">
+                    <label for="exampleDataList" class="ficha__dados__profissao__label">Profissão</label>
+                    <input class="fficha__dados__profissao__label" list="profissaoListOptions"  >
+                    <datalist id="profissaoListOptions">
+                      <option value="Acadêmico">
+                      <option value="Alfaiate">
+                      <option value="Arcanista">
+                      <option value="Artista">
+                      <option value="Carpinteiro">
+                      <option value="Cozinheiro">
+                      <option value="Criminoso">
+                      <option value="Explorador">
+                      <option value="Ferreiro">
+                      <option value="Herbalista">
+                      <option value="Inventor">
+                      <option value="Joalheiro">
+                      <option value="Mercador">
+                      <option value="Soldado de Aluguel">
+                    </datalist>
+                </div>
+            </form>  
+            <!--modificadores de acerto e dano -->
+           <div class="dano">
+                <form  class="ficha__classes__input" id="dados">
+                    <!--dano fisico -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="ficha__classes__input">Dano Físico</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                    <!--dano mágico -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="form-label">Dano Mágico</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                    <!--dano bonus -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="ficha__classes__input">Dano Bonus</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                </form>   
+                <!--acerto em base do valor de combate -->
+                <form  class="ficha__classes__input" id="dados">
+                    <!--combate corpo a corpo -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="ficha__classes__input">Combate Corpo a Corpo</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                    <!--combate arcano -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="ficha__classes__input">Combate Arcano</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                    <!--combate a distância -->
+                    <div id="nome" class="ficha__classes__input">
+                        <label for="inputZip" class="ficha__classes__input">Combate a Distância</label>
+                        <input type="number" min="0" max="1000000" class="ficha__classes__input" id="inputZip">
+                    </div>
+                </form> 
+           </div>
+       
+        </main>   
+       
+    </body>
+</html>

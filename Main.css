@@ -1,0 +1,90 @@
+html{
+    background: rgb(0, 0, 0);
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 75%;
+    margin: auto;
+    vertical-align:middle;
+    background-image: url("hope5.jpg");
+    opacity: 1
+    ;
+}
+
+.corpo1{
+  padding-bottom: 10%;
+}
+
+.ola{
+    color: rgb(194, 194, 194);
+    padding: 20px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    font-size: 8em;
+}
+
+p{
+    color: rgb(194, 194, 194);
+    font-size: 2em;
+    margin: 1%;
+    margin-bottom: 2%;
+
+}
+.pequeno{
+    display: inline-flex;
+    width: 40%;
+}
+
+.entrar{
+    border-radius: 30px;
+    border-color: black;
+    background-color: rgb(39, 39, 39);
+    margin-top: 10px;
+    padding: 20px;
+    color: rgb(194, 194, 194);
+    font-size: 1.5em;
+    margin-right: 50px;
+    width: 40%;
+    margin: auto;
+}
+
+#usuario{
+    margin-left: 18px;
+    width: 70%;
+    height: auto;
+    font-size: 1em;
+    background-color: rgb(158, 158, 158);
+    color: rgb(36, 36, 36);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#senha{
+    margin-left: 31px;
+    width: 70%;
+    height: auto;
+    font-size: 1em;
+    background-color: rgb(158, 158, 158);
+    color: rgb(36, 36, 36);
+    border-radius: 5px;
+    text-align: center;
+}
+.botao_entra{
+    width: 25%;
+    height: auto;
+    color: rgb(160, 160, 160);
+    background-color: black;
+    font-size: 1em;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+
+.ficha{
+
+}
+
+.cabecalho{
+
+}
