@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+#fantasma{
+    display: none;
+}
 
 body{
     min-height:100%;
@@ -34,7 +37,7 @@ input{
 
 .grid-ficha{
     display: grid;
-    grid-template-columns: 130px  200px  200px   ;
+    grid-template-columns: 120px  200px  200px   ;
     grid-template-rows:  50px  100px  100px  100px  50px  ; 
     border-radius: 4px;
     border-color: black;
@@ -90,6 +93,7 @@ input{
                 border-style:ridge;
                 border-width: 2px;
                 padding: 2px;
+                padding-right: 10px;
                 justify-content:end;
                 
 
@@ -104,11 +108,7 @@ input{
                    
                     
                 }
-                .ficha__classes3__label{
-                    align-items: center;
-                    justify-content: center;
-                }
-            
+              
 
                     .antecedenteProfissaoEspecialização{
                         gap: 10px;
