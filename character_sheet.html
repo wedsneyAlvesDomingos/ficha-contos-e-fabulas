@@ -47,43 +47,46 @@
          
            
             <form  class="antecedenteProfissaoEspecialização" id="dados">
-                   <!--classes -->
-            <div class="classes1234">
-                <div  class="classes">
-                      <input class="ficha__classes3__input" type="checkbox">
-                        <label for="exampleDataList" class="ficha__classes3__label">Aprendiz</label>
-                      
-                   
-                </div>
-                <!--classes2 -->
-                <div  class="classes">
-                    <input class="ficha__classes3__input" type="checkbox">
-                        <label for="exampleDataList" class="ficha__classes3__label">Comatente</label>
+
+                <!--classes -->
+                <div class="classes1234">
+                        <div  class="classes">
+                             <input class="ficha__classes3__input" type="checkbox">
+                            <label for="exampleDataList" class="ficha__classes3__label">Aprendiz</label>
+
+                        </div>
+                        <div>
+                            <!--classes2 -->
+                            <div  class="classes">
+                                <input class="ficha__classes3__input" type="checkbox">
+                                    <label for="exampleDataList" class="ficha__classes3__label">Combatente</label>
+                                    
+                            </div>    
+                    
+                            <!--classes3 -->
+                            <div  class="classes">
+                                
+                                <input class="ficha__classes3__input" type="checkbox">
+                                <label for="exampleDataList" class="ficha__classes3__label">Noviço</label>
+                            </div> 
+                        </div>
+                        <div>
+                            <!--classes4 -->
+                            <div  class="classes">
+                            
+                                <input class="ficha__classes4__input" type="checkbox"> 
+                                <label for="exampleDataList" class="ficha__classes4__label">Iniciado</label>
+                                
+                            </div>
+                            <!--classes5 -->
+                            <div  class="classes">
                         
-                    
+                                <input class="ficha__classes4__input" type="checkbox">      
+                                <label for="exampleDataList" class="ficha__classes4__label">Feiticeiro</label>
+                            </div>    
+                        </div>
                 </div>
-                <!--classes3 -->
-                <div  class="classes">
-                    
-                    <input class="ficha__classes3__input" type="checkbox">
-                    <label for="exampleDataList" class="ficha__classes3__label">Noviço</label>
-                </div>
-                <!--classes4 -->
-                <div  class="classes">
-                   
-                    <input class="ficha__classes4__input" type="checkbox"> 
-                    <label for="exampleDataList" class="ficha__classes4__label">Iniciado</label>
-                    
-                </div>
-                 <!--classes4 -->
-                 <div  class="classes">
-              
-                    <input class="ficha__classes4__input" type="checkbox">      
-                    <label for="exampleDataList" class="ficha__classes4__label">Feiticeiro</label>
-                    
-                </div>
-            </div>
-            <!--antecedente -->
+                <!--antecedente -->
                 <div id="antecedente" class="ficha__dados__antecedentes">
                     <label for="exampleDataList" class="ficha__dados__antecdentes__label">Antecedente</label>
                     <input class="ficha__dados__antecdentes__input" list="antecedenteDatalistOptions"  >
@@ -238,24 +241,39 @@
                     </div>
                 </form> 
            </div>
-           <form  class="ficha__dados__dano__valores" id="dano">
-            <!--dano fisico -->
-            <div id="danoFisico" class="ficha__dados__dano__valores__danoFisico">
-                <label for="inputZip" class="ficha__dados__danovalores__danoFisico__label">Dano Físico</label>
-                <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
-            </div>
-            <!--dano mágico -->
-            <div id="danoMagico" class="ficha__dados__dano__valores__danoMagico">
-                <label for="inputZip" class="ficha__dados__dano__valores__danoMagico__label">Dano Mágico</label>
-                <input type="number" min="0" max="1000000" class="ficha__dados__dano__valores__danoMagico__input" id="inputZip">
-            </div>
-            <!--dano bonus -->
-            <div id="danoBonus" class="ficha__dados__danovalores__danoBonus">
-                <label for="inputZip" class="ficha__dados__danovalores__danoBonus__label">Dano Bonus</label>
-                <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoBonus__input" id="inputZip">
-            </div>
-        </form>
-       
+            <form  class="ficha__dados__dano__valores" id="dano">
+                <!--dano fisico -->
+                <div id="danoFisico" class="ficha__dados__dano__valores__danoFisico">
+                    <label for="inputZip" class="ficha__dados__danovalores__danoFisico__label">Dano Físico</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
+                </div>
+                <!--dano mágico -->
+                <div id="danoMagico" class="ficha__dados__dano__valores__danoMagico">
+                    <label for="inputZip" class="ficha__dados__dano__valores__danoMagico__label">Dano Mágico</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__dano__valores__danoMagico__input" id="inputZip">
+                </div>
+                <!--dano bonus -->
+                <div id="danoBonus" class="ficha__dados__danovalores__danoBonus">
+                    <label for="inputZip" class="ficha__dados__danovalores__danoBonus__label">Dano Bonus</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoBonus__input" id="inputZip">
+                </div>
+             <!--ouro -->
+                <div id="gold" class="ficha__dados__dinheiro__ouro">
+                    <label for="inputZip" class="ouro">Moedas de Ouro</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
+                </div>
+                 <!--prata -->
+                 <div id="gold" class="ficha__dados__dinheiro__prata">
+                    <label for="inputZip" class="prata">Moedas de Prata</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
+                </div>
+                 <!--bronze -->
+                 <div id="gold" class="ficha__dados__dinheiro__bronze">
+                    <label for="inputZip" class="bronze">Moedas de Bronze</label>
+                    <input type="number" min="0" max="1000000" class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
+                </div>
+          </form>
+           
         </main>   
        
     </body>

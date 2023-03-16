@@ -23,30 +23,45 @@ body{
      position:absolute
 }
 input{
+    margin: 2px;
     justify-content: center;
     padding: 1px 4px;
     align-items: center;
+    border-radius: 5px;
+    border-width: 1px;
    
 }
 
 .grid-ficha{
     display: grid;
-    grid-template-columns:  310px 180px 310px 310px 310px 310px;
-    grid-template-rows:  200px  200px  200px  200px; 
-    box-sizing: border-box;
-    margin:auto;
+    grid-template-columns: 130px  200px  200px   ;
+    grid-template-rows:  50px  100px  100px  100px  50px  ; 
+    border-radius: 4px;
+    border-color: black;
+    background: rgb(124, 124, 124);
+    border-style:ridge;
+    padding: 10px;
+
+   
+    margin:2% 3%;
     gap: 10px;
-    column-gap: 20px;
+   width: fit-content;
     
 
 }
             .nomeEspecie{
-                grid-column-start: 1;
-                grid-column-end: 2;
+               grid-area:1/1/3/3 ;
                 display: flex;
                 flex-direction: column;
                justify-content:end;
                gap: 10px;
+               border-radius: 4px;
+               border-color: rgb(189, 189, 189);
+               background: rgb(173, 173, 173);
+               border-style:ridge;
+               border-width: 2px;
+               padding: 2px;
+               
                 
             }
                 .ficha__nome{
@@ -69,8 +84,14 @@ input{
             .classes1234{
                 gap: 10px;
                 display: flex;
-                flex-direction: column;
+                border-radius: 4px;
+                border-color: rgb(189, 189, 189);
+                background: rgb(173, 173, 173);
+                border-style:ridge;
+                border-width: 2px;
+                padding: 2px;
                 justify-content:end;
+                
 
                 
             }
@@ -79,19 +100,28 @@ input{
                    flex-direction: row;
                    gap: 10px;
                    justify-content: left;
-                   padding-right: 20px;
+                   padding-right: 2px;
                    
                     
                 }
-
-
+                .ficha__classes3__label{
+                    align-items: center;
+                    justify-content: center;
+                }
+            
 
                     .antecedenteProfissaoEspecialização{
                         gap: 10px;
                         display: flex;
                         flex-direction: column;
                        justify-content: top;
-                       grid-area: 2 / 1 / 3 / 2;
+                       grid-area: 3/ 1 / 6 / 3;
+                       border-radius: 4px;
+                       border-color: rgb(189, 189, 189);
+                       background: rgb(173, 173, 173);
+                       border-style:ridge;
+                       border-width: 2px;
+                       padding: 2px;
                     }
                     .ficha__dados__antecedentes{
                         display: flex;
@@ -114,21 +144,21 @@ input{
                        justify-content: center;
                     }
 
-
-
-
                         .ficha__dados__dano{
-                       
+                            grid-area: 1/ 3 / 3/ 4;
                             display: flex;
                             box-sizing: border-box;
                             gap: 10px;
                             justify-content: end;
-                            
                             flex-direction: column;
+                            border-radius: 4px;
+                            border-color: rgb(189, 189, 189);
+                            background: rgb(173, 173, 173);
+                            border-style:ridge;
+                            border-width: 2px;
+                            padding: 2px;
                             
                         }
-
-
 
                             .ficha__dados__acerto__valores{
                                 display: flex;
@@ -147,6 +177,7 @@ input{
                                         display: flex;
                                         flex-direction: column;
                                        justify-content: left;
+                                       
                                     }
                                     .ficha__dados__acerto__valores__Combateadistancia{
                                         display: flex;
@@ -159,13 +190,22 @@ input{
                                         flex-direction: column;
                                         align-items: left;
                                         grid-area: 2/2/3/3;
-                                        gap: 10px;
+                                        gap: 6.5px;
+                                        grid-area: 3/ 3 / 6/ 4;
+                                        border-radius: 4px;
+                                        border-color: rgb(189, 189, 189);
+                                        background: rgb(173, 173, 173);
+                                        border-style:ridge;
+                                        border-width: 2px;
+                                        padding: 2px;
+                                        box-sizing: border-box;
                                     }
                                         .ficha__dados__dano__valores__danoFisico{
                                             display: flex;
                                             flex-direction: row;
                                             justify-content: left;
                                             gap: 20px;
+                                            background: lightgray;
                                             }
                                             .ficha__dados__dano__valores__danoMagico{
                                                 display: flex;
@@ -178,4 +218,28 @@ input{
                                                 flex-direction: row;
                                             justify-content: left;
                                             gap: 18px;
+                                            background: lightgray;
                                         }
+                                 
+                                        
+                                        .ficha__dados__dinheiro__ouro{
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: left;
+                                            gap: 10px;
+                                        }
+                                        .ficha__dados__dinheiro__prata{
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: left;
+                                            gap: 10px;
+                                            background: lightgray;
+                                        }
+                                        .ficha__dados__dinheiro__bronze{
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: left;
+                                            gap: 10px;
+                                        }
+                                        
+                                        
