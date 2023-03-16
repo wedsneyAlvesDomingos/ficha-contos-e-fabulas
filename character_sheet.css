@@ -5,7 +5,12 @@
 
 body{
     min-height:100%;
+
     position:relative;
+    display: grid;
+
+    margin: auto;
+    box-sizing: border-box;
 }
 .leftbar  {
     left:0; 
@@ -25,37 +30,39 @@ input{
 }
 
 .grid-ficha{
-    display:grid;
-    gap: 0px;
-    grid-template-columns: auto auto auto auto;
-
+    display: grid;
+    grid-template-columns:  310px 180px 310px 310px 310px 310px;
+    grid-template-rows:  200px  200px  200px  200px; 
     box-sizing: border-box;
-    margin: 1% 2%;
-    column-gap: 50px;
-    width: 90%;
+    margin:auto;
+    gap: 10px;
+    column-gap: 20px;
+    
+
 }
             .nomeEspecie{
                 grid-column-start: 1;
                 grid-column-end: 2;
                 display: flex;
                 flex-direction: column;
-                justify-content:space-around;
+               justify-content:end;
+               gap: 10px;
                 
             }
                 .ficha__nome{
                     display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                 }
                 .ficha__especie{
                     display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                 }
                 .exp{
                     display: flex;
                     flex-direction: column;
-                    justify-content:space-around;
+                   justify-content: center;
                 }
 
 
@@ -63,13 +70,17 @@ input{
                 gap: 10px;
                 display: flex;
                 flex-direction: column;
-                justify-content:space-around;
+                justify-content:end;
+
                 
             }
                 .classes{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content:space-around;
+                   display: flex;
+                   flex-direction: row;
+                   gap: 10px;
+                   justify-content: left;
+                   padding-right: 20px;
+                   
                     
                 }
 
@@ -79,81 +90,92 @@ input{
                         gap: 10px;
                         display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: top;
+                       grid-area: 2 / 1 / 3 / 2;
                     }
                     .ficha__dados__antecedentes{
                         display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                     }
                     .ficha__dados__especializacao{
                         display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                     }
                     .ficha__dados__especializacao2{
                         display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                     }
                     .ficha__dados__profissao{
                         display: flex;
                         flex-direction: column;
-                        justify-content:space-around;
+                       justify-content: center;
                     }
 
 
 
 
                         .ficha__dados__dano{
-                            grid-column-start: 4;
-                            grid-column-end: 5;
+                       
                             display: flex;
                             box-sizing: border-box;
                             gap: 10px;
+                            justify-content: end;
+                            
+                            flex-direction: column;
                             
                         }
 
 
-                            .ficha__dados__dano__valores{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                            }
-                                .ficha__dados__dano__valores__danoFisico{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                }
-                                .ficha__dados__dano__valores__danoMagico{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                }
-                                .ficha__dados__danovalores__danoBonus{
-                                    display: flex;
-                                    flex-direction: column;
-                                    justify-content: space-between;
-                                }
 
                             .ficha__dados__acerto__valores{
-                           
                                 display: flex;
                                 flex-direction: column;
-                                justify-content: space-between;
-                            }
+                                justify-content: end;
+                                gap: 10px;
+                            }   
+                            
                                     .ficha__dados__acerto__valores__CombateCorpoaCorpo{
                                         display: flex;
                                         flex-direction: column;
-                                        justify-content: space-between;
+                                       justify-content: left;
+
                                     }
                                     .ficha__dados__acerto__valores__CombateArcano{
                                         display: flex;
                                         flex-direction: column;
-                                        justify-content: space-between;
+                                       justify-content: left;
                                     }
                                     .ficha__dados__acerto__valores__Combateadistancia{
                                         display: flex;
                                         flex-direction: column;
-                                        justify-content: space-between;
+                                       justify-content: left;
                                     }
+                               
+                                    .ficha__dados__dano__valores{
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: left;
+                                        grid-area: 2/2/3/3;
+                                        gap: 10px;
+                                    }
+                                        .ficha__dados__dano__valores__danoFisico{
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: left;
+                                            gap: 20px;
+                                            }
+                                            .ficha__dados__dano__valores__danoMagico{
+                                                display: flex;
+                                                flex-direction: row;
+                                            justify-content: left;
+                                            gap: 10px;
+                                            }
+                                            .ficha__dados__danovalores__danoBonus{
+                                                display: flex;
+                                                flex-direction: row;
+                                            justify-content: left;
+                                            gap: 18px;
+                                        }
