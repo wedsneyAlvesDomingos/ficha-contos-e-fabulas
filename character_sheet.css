@@ -37,7 +37,7 @@ input{
 
 .grid-ficha{
     display: grid;
-    grid-template-columns: 120px  200px  200px  300px  300px  300px   ;
+    grid-template-columns: 120px  200px  200px  150px  150px 150px  ;
     grid-template-rows:  70px  100px  100px  100px  50px  ; 
     border-radius: 4px;
     border-color: black;
@@ -254,23 +254,24 @@ p{
 }                                        
 .habilidades{
     display: flex;
-    grid-area: 1/4/5/5;
-    gap: 10px;
+    grid-area: 1/4/6/5;
+    gap: 20px;
     border-radius: 4px;
     border-color: rgb(189, 189, 189);
     background: rgb(173, 173, 173);
     border-style:ridge;
     border-width: 2px;
     padding: 2px;
-    box-sizing: border-box;
-    width: 300px;
+    
+    justify-content: space-between; 
 }
 .fisico{
-    
+    gap: 20px;
+    justify-content: space-between; 
 }
 .habilidade{
     display: flex;
-    width: 260px;
+    width: 100px;
     justify-content:space-between;
-    gap: 10px;
+    gap: 20px;
 }
