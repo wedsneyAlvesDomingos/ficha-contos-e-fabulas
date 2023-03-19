@@ -43,6 +43,18 @@
                     <label for="inputZip" class="ficha__exp__label">Exp</label>
                     <input type="number" min="1" max="1000000" class="ficha__exp__input" id="inputZip">
                 </div>
+                <div class="complementos">
+                    <div class="ficha__nome">
+                        <label class="ficha__nome__label">Idade</label>
+                        <input type="text" class="ficha__extra__input">
+                    </div>
+                    <div class="ficha__nome">
+                        <label class="ficha__nome__label">Sexo</label>
+                        <input type="text" class="ficha__extra__input">
+                    </div>
+                </div>
+                  <!--Idade -->
+                    
             </form>    
          
            
@@ -232,6 +244,7 @@
           
                 <!--acerto em base do valor de combate -->
                 <form class="ficha__dados__acerto__valores">
+                    <p>Acerto</p>
                     <!--combate corpo a corpo -->
                     <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores__CombateCorpoaCorpo">
                         <label for="inputZip" class="ficha__dados__acerto__valores__Combate Corpo a Corpo__label">Combate Corpo a Corpo</label>
@@ -255,6 +268,7 @@
                 </form> 
            </div>
             <form  class="ficha__dados__dano__valores" id="dano">
+                <p>Dano</p>
                 <!--dano fisico -->
                 <div id="danoFisico" class="ficha__dados__dano__valores__danoFisico">
                     <label for="inputZip" class="ficha__dados__danovalores__danoFisico__label">Dano Físico</label>
@@ -288,44 +302,188 @@
             </form>
             <!--Hablidades -->
             <div class="habilidades">  
-                <div classe="fisico">
-                    <p>Habilidades</p>
+                <p>Habilidades</p>
+                <div id="fisico">
                     <p>Físico</p>
-                    <div class="acrobacia">
+                    <div class="habilidade2">
                         <label for="inputZip">Acrobacia</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
                     </div>
-                    <div class="agilidade">
+                    <div class="habilidade1">
                         <label for="inputZip">Agilidade</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
                     </div>
-                    <div class="atletismo">
+                    <div class="habilidade2">
                         <label for="inputZip">Atletismo</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
                     </div>
-                    <div class="combateCorpoaCorpo">
+                    <div class="habilidade1">
                         <label for="inputZip">Combate Corpo a Corpo</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
                     </div>
-                    <div class="combateADistancia">
+                    <div class="habilidade2">
                         <label for="inputZip">Combate a Distância</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15" id="inputZip">
                     </div>
-                    <div class="destreza">
+                    <div class="habilidade1">
                         <label for="inputZip">Destreza</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
                     </div>
-                    <div class="força">
+                    <div class="habilidade2">
                         <label for="inputZip">Força</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
                     </div>
-                    <div class="fortitude">
+                    <div class="habilidade1">
                         <label for="inputZip">Fortitude</label>
-                        <input type="number" class="habilidade" min="0" max="1000000"  id="inputZip">
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
                     </div>
 
                 </div>
+                <div id="conhecimento">
+                    <p>Conhecimento</p>
+                    <div class="habilidade2">
+                        <label for="inputZip">História</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Intuição</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Jurisprudência</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Natureza</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Medicina</label>
+                        <input type="number" class="habilidade" min="0"  max="15" id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Natureza</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Tecnologia</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Teologia</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+                </div>
             </div>
+            <div class="coluna3">
+                <div id="exploracao">
+                    <p>Exploração</p>
+                    <div class="habilidade2">
+                        <label for="inputZip">Armadilhas</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Condução Veic. Aquáticos</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Condução Veic. Terrestres</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Condução Exótica</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Furtividade</label>
+                        <input type="number" class="habilidade" min="0"  max="15" id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Lidar Com Animais</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Navegação</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Percepção</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Rastreamento</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Sobrevivência</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                </div>
+                <div id="arcana">
+                    <p>Arcana</p>
+                    <div class="habilidade2">
+                        <label for="inputZip">Arcanismo</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Apuração itens Magicos</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Alquimia</label>
+                         <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Combate Arcano</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Identificar Armadilhas Magicas</label>
+                        <input type="number" class="habilidade" min="0"  max="15" id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">ocultismo</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Ritualismo</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="arcana">
+                    <p>Arcana</p>
+                    <div class="habilidade2">
+                        <label for="inputZip">Arcanismo</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Apuração itens Magicos</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Alquimia</label>
+                         <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">Combate Arcano</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Identificar Armadilhas Magicas</label>
+                        <input type="number" class="habilidade" min="0"  max="15" id="inputZip">
+                    </div>
+                    <div class="habilidade1">
+                        <label for="inputZip">ocultismo</label>
+                        <input type="number" class="habilidade" min="0"  max="15"  id="inputZip">
+                    </div>
+                    <div class="habilidade2">
+                        <label for="inputZip">Ritualismo</label>
+                        <input type="number" class="habilidade" min="0" max="15"  id="inputZip">
+                    </div>
+            </div>
+
         </main>   
        
     </body>
