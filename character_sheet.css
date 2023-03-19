@@ -81,6 +81,9 @@ justify-content: center;
 }
 .complementos{
 display: flex;
+flex-direction: row;
+gap: 5px;
+justify-content: space-between;
 }
 .ficha__extra__input{
 width: 148px;
@@ -160,7 +163,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 gap: 10px;
-                               
+          font-size: medium;                     
 }   
                             
 .ficha__dados__acerto__valores__CombateCorpoaCorpo{
@@ -192,7 +195,7 @@ border-style:ridge;
 border-width: 2px;
 padding: 2px;
 box-sizing: border-box;
-font-size: large;
+font-size: medium;
 }
 .ficha__dados__dano__valores__danoFisico{
 display: flex;
@@ -236,7 +239,7 @@ background: lightgray;
 .ficha__dados__dinheiro__bronze{
 display: flex;
 flex-direction: row;
-justify-content: left;
+justify-content: space-between;
 gap: 10px;
  }
 p{
