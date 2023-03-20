@@ -9,11 +9,12 @@
 body{
     min-height:100%;
     height: 100vh;
-    padding: 100px;
+  
     position:relative;
     display: flex;
     margin: auto;
     box-sizing: border-box;
+    background: rgb(37, 37, 46);
 }
 .leftbar  {
     left:0; 
@@ -37,32 +38,37 @@ input{
 
 .grid-ficha{
     display: grid;
-    grid-template-columns: 160px 200px 200px 250px 250px 250px  ;
-    grid-template-rows:  150px 150px 150px 120px  ; 
-    border-radius: 4px;
-    border-color: black;
-    background: rgb(124, 124, 124);
+    grid-template-columns: 180px 220px 250px 280px 280px 280px  ;
+    grid-template-rows:  160px 160px 160px 130px  ; 
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 254, 254);
+    border-width: 0px;
     border-style:ridge;
-    padding: 5px;
+    padding: 20px;
     margin: auto;
-    gap: 10px;
-    font-size:larger;
+    column-gap: 50px;
+    row-gap: 30px;
+    font-size:medium;
     box-sizing: content-box;
-    padding: 10px;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
 
 }
 .nomeEspecie{
-grid-area:1/1/3/3 ;
+grid-area:1/1/5/3 ;
 display: flex;
 flex-direction: column;
 justify-content:start;
-gap: 10px;
-border-radius: 4px;
-border-color: rgb(189, 189, 189);
-background: rgb(173, 173, 173);
+gap: 20px;
+border-radius: 10px;
+border-color: rgb(255, 255, 255);
+background: rgb(255, 255, 255);
+box-shadow: 4px 4px 10px 4px #afafaf ;
 border-style:ridge;
-border-width: 2px;
-padding: 2px;
+border-width: 0px;
+padding: 10px;
 }
 .ficha__nome{
 display: flex;
@@ -93,13 +99,13 @@ width: 148px;
 gap: 10px;
 display: flex;
 border-radius: 4px;
-border-color: rgb(189, 189, 189);
-background: rgb(173, 173, 173);
+border-color: rgb(255, 255, 255);
+background: rgb(255, 255, 255);
 border-style:ridge;
-border-width: 2px;
+border-width: 0px;
 padding: 2px;
 padding-right: 10px;
-justify-content:end;
+justify-content:space-between;
              
  }
 .classes{
@@ -116,12 +122,12 @@ gap: 5px;
 display: flex;
 flex-direction: column;
 justify-content: top;
-grid-area: 3/ 1 / 5 / 3;
+/*grid-area: 3/ 1 / 5 / 3;*/
 border-radius: 4px;
-border-color: rgb(189, 189, 189);
-background: rgb(173, 173, 173);
+border-color: rgb(255, 255, 255);
+background: rgb(255, 255, 255);
 border-style:ridge;
-border-width: 2px;
+border-width: 0px;
 padding: 2px;
 }
 .ficha__dados__antecedentes{
@@ -146,15 +152,18 @@ justify-content: center;
 }
 
 .ficha__dados__dano{
-grid-area: 1/ 3 / 3/ 4;
+    grid-area: 3/ 3 / 5/ 4;
 display: flex;
 flex-direction: column;
-border-radius: 4px;
-border-color: rgb(189, 189, 189);
-background: rgb(173, 173, 173);
+border-radius: 10px;
+border-color: rgb(255, 255, 255);
+background: rgb(255, 255, 255);
+box-shadow: 4px 4px 10px 4px #afafaf ;
 border-style:ridge;
-border-width: 2px;
-padding: 2px;
+border-width: 0px;
+padding: 10px;
+gap: 20px;
+
                             
 }
 
@@ -163,7 +172,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 gap: 10px;
-          font-size: medium;                     
+                        
 }   
                             
 .ficha__dados__acerto__valores__CombateCorpoaCorpo{
@@ -184,18 +193,18 @@ justify-content: left;
 }
                                
 .ficha__dados__dano__valores{
-display: flex;
-flex-direction: column;
-gap: 10px;
-grid-area: 3/ 3 / 5/ 4;
-border-radius: 4px;
-border-color: rgb(189, 189, 189);
-background: rgb(173, 173, 173);
-border-style:ridge;
-border-width: 2px;
-padding: 2px;
-box-sizing: border-box;
-font-size: medium;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-area: 2/ 3 / 3/ 4;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px 4px #afafaf ;
+    border-style:ridge;
+    border-width: 0px;
+    padding: 10px;
+
 }
 .ficha__dados__dano__valores__danoFisico{
 display: flex;
@@ -221,7 +230,20 @@ background: lightgray;
     gap: 18px;
     background: lightgray;
 }
-                                 
+.dinheiro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    grid-area: 1/ 3 / 2/ 4;
+  
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
+    box-shadow: 4px 4px 10px 4px #afafaf ;
+    border-style:ridge;
+    border-width: 0px;
+    padding: 10px;
+}                                 
                                         
 .ficha__dados__dinheiro__ouro{
 display: flex;
@@ -244,12 +266,15 @@ gap: 10px;
  }
 p{
     border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: #ffffff;
     border-style:ridge;
-    border-width: 2px;
+    border-width: 0px;
     padding: 2px;
     box-sizing: border-box;
+    font-weight:600;
+    font-size: large;
+    
 }                                        
 
 #fisico{
@@ -257,38 +282,38 @@ p{
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-style:ridge;
-    border-width: 2px;
+    border-width: 0px;
     gap: 2px;
     padding: 5px;
-    font-size: medium;
+
 }
 #conhecimento{
     grid-area: 3/ 4 / 5 / 5;
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-style:ridge;
-    border-width: 2px;
+    border-width: 0px;
     gap: 5px;
     padding: 5px;
-    font-size: medium;
+
 }
 #social{
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-style:ridge;
-    border-width: 2px;
+    border-width: 0px;
     gap: 8px;
    padding: 5px;
-   font-size: medium;
+
    grid-area: 1/6/3/7;
 }
 
@@ -297,13 +322,13 @@ p{
     gap: 2px;
     display: flex;
     flex-direction: column;
-    border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-style:ridge;
+    border-width: 0px;
     border-width: 2px;
     padding: 5px;
-    font-size: medium;
+
 }
 #arcana{
     grid-area:5/ 5 / 3 / 6;
@@ -311,23 +336,30 @@ p{
     display: flex;
     flex-direction: column;
     border-radius: 4px;
-    border-color: rgb(189, 189, 189);
-    background: rgb(173, 173, 173);
+    border-color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
     border-style:ridge;
-    border-width: 2px;
+    border-width: 0px;
     padding: 5px;
-    font-size: medium;
+
 }
 .habilidade1{
     display:flex;
+    padding: 2px;
     gap: 10px;
     justify-content: space-between;
+    border-radius: 3px;
+    border-width: 1px;    
+
 }
 .habilidade2{
     display:flex;
     gap: 10px;
     justify-content: space-between;
     background: lightgray;
+    border-radius: 3px;
+    border-width: 1px;
+    padding: 2px;
  
     }
 .habilidade{
