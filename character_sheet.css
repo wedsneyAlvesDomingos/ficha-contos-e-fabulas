@@ -280,7 +280,7 @@ p{
 
 .quadroHabilidade{
     grid-area: 1/ 4 / 5 / 7;
- 
+    padding: 20px;
     display: grid;
     grid-template-columns: 135px  135px  135px  135px  135px  135px ;
     grid-template-rows: 40.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 47.5px 30.5px   ; 
