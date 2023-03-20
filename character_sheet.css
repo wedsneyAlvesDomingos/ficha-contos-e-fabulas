@@ -15,7 +15,7 @@ body{
     display: flex;
     margin: auto;
     box-sizing: border-box;
-    background: rgb(37, 37, 46);
+    background-image: url(Mapa_Bokislad.jpg);
 }
 .leftbar  {
     left:0; 
@@ -44,7 +44,7 @@ input{
     grid-template-rows:  180px 180px 180px 180px  ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
- background: #ffffff;
+    background: rgba(255,255,255);
     border-width: 0px;
     border-style:ridge;
     padding: 20px;
