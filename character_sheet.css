@@ -382,12 +382,7 @@ p{
     width: 30px;
 }
 .tituloHabilidade{
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-     background: #ffffff;   
-     box-shadow: 4px 4px 10px 4px #afafaf ;
-    border-style:ridge;
-    border-width: 0px;
+  
     padding: 10px;
     justify-content: center;
     align-items: center;
