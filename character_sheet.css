@@ -38,13 +38,20 @@ input{
    text-align: center;
 }
 
+input[type="checkbox"] {
+    width: 20px;                         /* Set width */
+    height: 20px;                        /* Set height */
+    clip-path: circle(30% at 50% 50%);   /* Set the clip path of circle*/
+    
+  }
+
 .grid-ficha{
     display: grid;
     grid-template-columns: 180px 220px 250px 300px 350px 300px  ;
     grid-template-rows:  180px 180px 180px 180px  ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
-    background: rgba(255,255,255);
+    background: rgba(255,255,255, 0.8);
     border-width: 0px;
     border-style:ridge;
     padding: 20px;
@@ -99,8 +106,7 @@ width: 148px;
 gap: 10px;
 display: flex;
 border-radius: 4px;
-border-color: rgb(255, 255, 255);
-   background: #ffffff;
+background: rgb(235, 235, 235);
 
 border-style:ridge;
 border-width: 0px;
@@ -266,11 +272,7 @@ justify-content: space-between;
 gap: 10px;
  }
 p{
-    border-radius: 4px;
-    border-color: rgb(255, 255, 255);
-    background: #ffffff;
-    border-style:ridge;
-    border-width: 0px;
+   
     padding: 2px;
     box-sizing: border-box;
     font-weight:600;
@@ -328,7 +330,7 @@ p{
     padding: 10px;;
     gap: 10px;
    padding: 5px;
-   grid-area: 1/5/6/7;
+   grid-area: 1/5/5/7;
    
 }
 
@@ -363,7 +365,7 @@ p{
 
 }
 #condicoes{        
-        grid-area: 6/5/11/7;
+        grid-area: 5/5/11/7;
         gap: 10px;
         display: flex;
         flex-direction: column;
