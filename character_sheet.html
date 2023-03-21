@@ -11,42 +11,43 @@
     <body>
         <!--corpo da ficha -->
         <main class="grid-ficha">
-            <div class="vidaMagia">
-                <div class="vida">
-                    <div class="status">
-                    <label for="inputVidaMaxima">Vida Máxima</label>
-                    <input type="number" class="inputVidaMaxima" min="0">
-                    </div>
-                    <div class="status">
-                        <label for="inputVida">Vida Atual</label>
-                        <input type="number" class="inputVida" min="0">
-                    </div>
-                </div>
-                <div class="magia">
-                    <div class="status">
-                    <label for="inputMagiaMaxima">Magia Máxima</label>
-                    <input type="number" class="inputMagiaMaxima" min="0">
-                    </div>
-                    <div class="status">
-                        <label for="inputMagia">Magia Atual</label>
-                        <input type="number" class="inputMagia" min="0">
-                    </div>
-                    
-                </div>
-                <div class="estamina">
-                    <div class="status">
-                    <label for="inputEstaminaMaxima">Estamina Máxima</label>
-                    <input type="number" class="inputEstaminaMaxima" min="0">
-                    </div>
-                    <div class="status">
-                        <label for="inputEstamina">Estamina Atual</label>
-                        <input type="number" class="inputEstamina" min="0">
-                    </div>
-                    
-                </div>
-               
-            </div>
+    
             <form class="nomeEspecie">
+                <div class="vidaMagia">
+                    <div class="vida">
+                        <div class="status">
+                        <label for="inputVidaMaxima">Vida Máxima</label>
+                        <input type="number" class="inputVidaMaxima" min="0">
+                        </div>
+                        <div class="status">
+                            <label for="inputVida">Vida Atual</label>
+                            <input type="number" class="inputVida" min="0">
+                        </div>
+                    </div>
+                    <div class="magia">
+                        <div class="status">
+                        <label for="inputMagiaMaxima">Magia Máxima</label>
+                        <input type="number" class="inputMagiaMaxima" min="0">
+                        </div>
+                        <div class="status">
+                            <label for="inputMagia">Magia Atual</label>
+                            <input type="number" class="inputMagia" min="0">
+                        </div>
+                        
+                    </div>
+                    <div class="estamina">
+                        <div class="status">
+                        <label for="inputEstaminaMaxima">Estamina Máxima</label>
+                        <input type="number" class="inputEstaminaMaxima" min="0">
+                        </div>
+                        <div class="status">
+                            <label for="inputEstamina">Estamina Atual</label>
+                            <input type="number" class="inputEstamina" min="0">
+                        </div>
+                        
+                    </div>
+                   
+                </div>
                 <p>Informações Pessoais</p>
                 <!--nome -->
                 <div class="ficha__nome">
@@ -289,7 +290,7 @@
             
                     <!--acerto em base do valor de combate -->
                     <form class="ficha__dados__acerto__valores">
-                        <p>Acerto</p>
+                        <p>Combate</p>
                         <!--combate corpo a corpo -->
                         <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores__CombateCorpoaCorpo">
                             <label for="inputZip" class="ficha__dados__acerto__valores__Combate Corpo a Corpo__label">Combate Corpo a Corpo</label>
@@ -305,13 +306,20 @@
                             <label for="inputZip" class="ficha__dados__acerto__valores_Combate a distancia__label">Combate a Distância</label>
                             <input type="number" min="0" max="1000000" class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
                         </div>
-                        <!--combate a distância -->
-                        <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
+                       <!--defesa -->
+                         <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
                             <label for="inputZip" class="ficha__dados__acerto__valores_Combate a distancia__label">Valor de Defesa</label>
                             <input type="number" min="7" max="1000000" class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
                         </div>
+                         <!--velocidade -->
+                         <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
+                            <label for="inputZip" class="ficha__dados__acerto__valores_Combate a distancia__label">Valelocidade de Movimento</label>
+                            <input type="number" min="7" max="1000000" class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
+                        </div>
                     </form>
-                     
+                    
+                         
+                    
             </div>
                 <form  class="ficha__dados__dano__valores" id="dano">
                     <p>Dano</p>

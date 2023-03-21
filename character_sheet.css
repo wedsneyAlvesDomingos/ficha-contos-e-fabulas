@@ -7,8 +7,9 @@
 }
 
 body{
-    min-height:100%;
+   
     height: 100vh;
+    width: 100vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     position:relative;
@@ -16,6 +17,7 @@ body{
     margin: auto;
     box-sizing: border-box;
     background-image: url(Mapa_Bokislad.jpg);
+    padding: 30px;
 }
 .leftbar  {
     left:0; 
@@ -33,25 +35,45 @@ input{
     padding: 2px;
     align-items: center;
     border-radius: 4px;
-    border-width: 0px;
-    background: #dadada;
+    border-width: 0.0px;
+    border-color: #f5f5f5;
+    background: #e9e9e9;
     text-align: center;
     color: rgb(27, 27, 27) ;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
 }
+.habilidade2 input{
+     margin: 2px;
+    justify-content: center;
+    padding: 2px;
+    align-items: center;
+    border-radius: 4px;
+    border-width: 0.0px;
+    
+    background: #cccccc;
+    text-align: center;
+    color: rgb(44, 44, 44) ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
 
 input[type="checkbox"] {
+   
     width: 20px;                         /* Set width */
     height: 20px;                        /* Set height */
     clip-path: circle(30% at 50% 50%);   /* Set the clip path of circle*/
     
   }
-
+  .condicoes input{
+    background: #a7a7a7;
+   
+    
+  }
 .grid-ficha{
     display: grid;
-    grid-template-columns: 180px 220px 250px 300px 350px 300px  ;
-    grid-template-rows:  120px 180px 180px 180px 90px  ; 
+    grid-template-columns: 180px 180px 250px 300px 350px 300px  ;
+    grid-template-rows:  130px 190px 190px 170px 100px  ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
     background: rgba(255,255,255, 0.8);
@@ -68,50 +90,40 @@ input[type="checkbox"] {
 }
 
 .vidaMagia{
-    grid-area:1/1/2/4 ;
+   
     display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
+    flex-direction: column;
+   justify-content: space-between;
     gap: 20px;
-  
-    
-    text-align: center;
+    font-weight: 00;
+
+   
 }
 .vida{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 10px 4px #afafaf ;
-    border-style:ridge;
-    border-width: 0px;
-    justify-content: center;
+  
+    justify-content:space-between ;
 }
 .magia{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 10px 4px #afafaf ;
-    border-style:ridge;
-    border-width: 0px;
-    justify-content: center;
+    background: rgb(247, 247, 247);
+
+    justify-content:space-between ;
 }
 .estamina{
     display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-    background: rgb(255, 255, 255);
-    box-shadow: 4px 4px 10px 4px #afafaf ;
-    border-style:ridge;
-    border-width: 0px;
-    justify-content: center;
+    justify-content:space-between ;
+}
+.status{
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
 }
 .nomeEspecie{
-grid-area:2/1/6/3 ;
+grid-area:1/1/6/3 ;
 display: flex;
 flex-direction: column;
 justify-content:start;
@@ -123,7 +135,7 @@ box-shadow: 4px 4px 10px 4px #afafaf ;
 border-style:ridge;
 border-width: 0px;
 padding: 10px;
-margin-bottom: 20px;
+
 }
 .ficha__nome{
 display: flex;
@@ -208,7 +220,7 @@ justify-content: center;
 }
 
 .ficha__dados__dano{
-grid-area: 4/ 3 / 6/ 4;
+grid-area: 1/ 3 / 3/ 4;
 display: flex;
 flex-direction: column;
 border-radius: 10px;
@@ -219,18 +231,18 @@ box-shadow: 4px 4px 10px 4px #afafaf ;
 border-style:ridge;
 border-width: 0px;
 padding: 10px;
-gap: 20px;
+gap: 5px;
 
                             
 }
 
 .ficha__dados__acerto__valores{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
                         
-}   
+}
                             
 .ficha__dados__acerto__valores__CombateCorpoaCorpo{
 display: flex;
@@ -290,7 +302,7 @@ background: lightgray;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    grid-area: 2/ 3 / 3/ 4;
+    grid-area: 4/ 3 / 5/ 4;
       border-radius: 10px;
     border-color: rgb(255, 255, 255);
     background: #ffffff;   
@@ -330,12 +342,13 @@ p{
 
 .quadroHabilidade{
     grid-area: 1/ 4 / 6/ 7;
-    padding: 20px;
+   
     display: grid;
     grid-template-columns: 135px  135px  135px  135px  135px  175px ;
-    grid-template-rows: 50px  50px  50px  60px  50px  50px  50px  50px   ; 
+    grid-template-rows: 50px  50px  80px  50px  80px  50px  80px  80px 80px  80px    ; 
     column-gap: 30px;
-    row-gap: 22px;
+    row-gap: 24px;
+    
     
 }
 
@@ -425,7 +438,7 @@ p{
         border-width: 0px;
         padding: 10px;
         padding: 5px;
-        font-size: small;
+       
         
 }
 .habilidade1{
@@ -441,7 +454,7 @@ p{
     display:flex;
     gap: 10px;
     justify-content: space-between;
-    background: rgb(235, 235, 235);
+    background: rgb(247, 247, 247);
     border-radius: 3px;
     border-width: 1px;
     padding: 2px;
