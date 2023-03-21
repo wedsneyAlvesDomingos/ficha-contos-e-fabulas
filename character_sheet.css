@@ -51,7 +51,7 @@ input[type="checkbox"] {
 .grid-ficha{
     display: grid;
     grid-template-columns: 180px 220px 250px 300px 350px 300px  ;
-    grid-template-rows:  120px 180px 180px 180px 80px  ; 
+    grid-template-rows:  120px 180px 180px 180px 90px  ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
     background: rgba(255,255,255, 0.8);
@@ -427,7 +427,6 @@ p{
         padding: 5px;
         font-size: small;
         
-
 }
 .habilidade1{
     display:flex;
