@@ -238,7 +238,6 @@ flex-direction: column;
 border-radius: 10px;
 border-color: rgb(255, 255, 255);
 background: #ffffff;
-margin-bottom: 20px;
 box-shadow: 4px 4px 10px 4px #afafaf ;
 border-style:ridge;
 border-width: 0px;
@@ -486,7 +485,7 @@ p{
 .equipamento{
     display: grid;
     grid-template-columns: 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px 130px  ;
-    grid-template-rows:  40px   78px   78px   78px   78px   78px   78px   78px   78px   78px   78px  ; 
+    grid-template-rows:  40px   78px   78px   78px   78px   78px   78px   78px   78px   78px     ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
     background: rgba(255,255,255, 0.8);
