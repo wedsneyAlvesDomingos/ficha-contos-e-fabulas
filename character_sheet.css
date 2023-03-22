@@ -500,6 +500,9 @@ p{
     width: fit-content;
     margin-top: 40px;
 }
+#equipamento{
+    grid-area: 1/1/2/3;
+}
 .armas{
     grid-area: 2/1/6/5;
     
@@ -541,4 +544,41 @@ p{
     box-shadow: 4px 4px 10px 4px #afafaf ;
     border-style:ridge;
     border-width: 0px;   
+}
+.mochila{
+    grid-area: 2/9/6/12;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: #ffffff;    
+    box-shadow: 4px 4px 10px 4px #afafaf ;
+    border-style:ridge;
+    border-width: 0px;   
+}
+.conteudoMochila{
+    width: 100%;
+}
+.itemMagico{
+    grid-area: 6/1/11/5;
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+    justify-content: space-between;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background: #ffffff;    
+    box-shadow: 4px 4px 10px 4px #afafaf ;
+    border-style:ridge;
+    border-width: 0px;  
+}
+.inputDescricao{
+    width: 350px;
+ 
 }
