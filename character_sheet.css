@@ -9,20 +9,7 @@ a{
 font-style:normal;
 color: #3b3b3b;
 }
-body{
-   
-    height: 100vh;
-    width: 100vw;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    box-sizing: border-box;
-    background-image: url(Mapa_Bokislad.jpg);
-    padding: 30px;
-}
+
 .leftbar  {
     left:0; 
     top:0;
@@ -70,7 +57,7 @@ input{
     font-weight: 600;
 }
 
-input[type="checkbox"] {
+.checkbox_round {
    
     width: 20px;                         /* Set width */
     height: 20px;                        /* Set height */
@@ -84,7 +71,7 @@ input[type="checkbox"] {
   }
 .grid-ficha{
     display: grid;
-    grid-template-columns: 180px 180px 250px 300px 350px 300px  ;
+    grid-template-columns: 180px 180px  ;
     grid-template-rows:  130px 190px 190px 170px 100px  ; 
     border-radius: 10px;
     border-color: rgb(255, 255, 255);
@@ -584,7 +571,7 @@ p{
     width: 350px;
  
 }
-.regaliasEspecie{
+.regalias{
     grid-area: 6/5/11/12;
     
     display: flex;
@@ -609,23 +596,7 @@ textarea{
     border-width: 0px;
     background: #ebebeb;
 }
-.regaliasClasse{
-    display: grid;
-    grid-template-columns: 190px 70px 130px 130px 130px 130px 130px 130px 130px 130px 130px  ;
-    grid-template-rows:  40px   78px   78px   78px   78px   78px   78px   78px   78px   78px   78px  ; 
-    border-radius: 10px;
-    border-color: rgb(255, 255, 255);
-    background: rgba(255,255,255, 0.8);
-    border-width: 0px;
-    border-style:ridge;
-    padding: 20px;
-    margin: auto;
-    column-gap: 33px;
-    row-gap: 10px;
-    font-size:medium;
-    width: fit-content;
-    margin-top: 40px;
-}
+
 .classeReg{
     grid-area: 2/1/15/12;
     
