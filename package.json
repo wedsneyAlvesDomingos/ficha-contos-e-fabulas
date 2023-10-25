@@ -1,0 +1,25 @@
+{
+  "name": "ficha-contos-e-fabulas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wedsneyAlvesDomingos/ficha-contos-e-fabulas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wedsneyAlvesDomingos/ficha-contos-e-fabulas/issues"
+  },
+  "homepage": "https://github.com/wedsneyAlvesDomingos/ficha-contos-e-fabulas#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-static": "^1.2.6",
+    "sqlite3": "^5.1.6"
+  }
+}
