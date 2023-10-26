@@ -1,8 +1,7 @@
-
 <html lang="en">
 
 <head>
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lâmina Do Oculto</title>
@@ -10,15 +9,18 @@
     <link rel="stylesheet" href="/assets/css/character_sheet.css" type="text/css">
 
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Krona+One&family=Montserrat:wght@400;600;700;800;900&family=Nunito+Sans:wght@200&family=Qwitcher+Grypen&family=Rajdhani:wght@300&family=Silkscreen&display=swap">
- 
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Aboreto&family=Krona+One&family=Montserrat:wght@400;600;700;800;900&family=Nunito+Sans:wght@200&family=Qwitcher+Grypen&family=Rajdhani:wght@300&family=Silkscreen&display=swap">
+
     <title>Lamina Do Oculto</title>
 </head>
 
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="#">Página Inicial</a></li>
+            <li><a href="Landing.html">Página Inicial</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a target="_blank"
                     href="https://docs.google.com/document/d/e/2PACX-1vR_z-Kb42pao_eJw9PpyvKgvocEi-JkniauVl2d7pND4EkqmUXVbVaPk1rWfLWeQUXJ94dkd0qunmI_/pub">Sistema</a>
@@ -55,13 +57,15 @@
     <!-- Modal -->
     <div id="modal" class="modal">
         <button onclick="fechaFichaModal()">Fechar</button>
+
+
+
         <div class="modal-content">
-           
+            <button onclick="salvaFicha()">Salvar</button>
 
-            
+
             <!--corpo da ficha -->
-            <form class="grid-ficha" >
-
+            <form class="grid-ficha">
                 <main class="nomeEspecie">
                     <div class="personagem">
                         <p>Personagem</p> <img src="/assets/icons/body-scan.png" class="icon" alt="Personagem" />
@@ -87,7 +91,6 @@
                                 <label for="inputMagia">Magia Atual</label>
                                 <input type="number" class="inputMagia" min="0">
                             </div>
-
                         </div>
                         <div class="estamina">
                             <div class="status">
@@ -98,17 +101,16 @@
                                 <label for="inputEstamina">Estamina Atual</label>
                                 <input type="number" class="inputEstamina" min="0">
                             </div>
-
                         </div>
-
                     </div>
 
-                    <!--nome -->
+                    <!-- Nome -->
                     <div class="ficha__nome">
                         <label class="ficha__nome__label">Nome</label>
                         <input type="text" class="ficha__nome__input">
                     </div>
-                    <!--especie -->
+
+                    <!-- Espécie -->
                     <div class="ficha__especie">
                         <label for="exampleDataList" class="ficha__especie__label">Espécie</label>
                         <input class="ficha__especie__input" list="especiesListOptions">
@@ -129,12 +131,14 @@
                             <option value="Troll">
                         </datalist>
                     </div>
-                    <!--exp -->
+
+                    <!-- Exp -->
                     <div id="exp" class="exp">
                         <label for="inputZip" class="ficha__exp__label">Exp</label>
                         <input type="number" min="1" max="1000000" class="ficha__exp__input" id="inputZip">
                     </div>
-                    <!--Idade -->
+
+                    <!-- Idade -->
                     <div class="complementos">
                         <div class="ficha__nome">
                             <label class="ficha__nome__label">Pontos de Regalia</label>
@@ -144,9 +148,9 @@
                             <label class="ficha__nome__label">Idade</label>
                             <input type="number" class="ficha__extra__input" min="0" max="1000000">
                         </div>
-
                     </div>
-                    <!--sexo -->
+
+                    <!-- Sexo -->
                     <div class="complementos">
                         <div class="ficha__nome">
                             <label class="ficha__nome__label">Sexo</label>
@@ -159,54 +163,45 @@
                     </div>
 
                     <form class="antecedenteProfissaoEspecialização" id="dados">
-
-
                         <div class="classes1234">
-                            <!--classes -->
+                            <!-- Classes -->
                             <div>
                                 <div class="classes" id="fantasma">
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes3__label">Aprendiz</label>
-
                                 </div>
                                 <div class="classes">
                                     <input class="checkbox_round" type="checkbox" id="aprendiz">
                                     <label for="exampleDataList" class="ficha__classes3__label">Aprendiz</label>
-
                                 </div>
                             </div>
                             <div>
-                                <!--classes2 -->
+                                <!-- Classes2 -->
                                 <div class="classes">
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes3__label">Combatente</label>
-
                                 </div>
 
-                                <!--classes3 -->
+                                <!-- Classes3 -->
                                 <div class="classes">
-
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes3__label">Noviço</label>
                                 </div>
                             </div>
                             <div>
-                                <!--classes4 -->
+                                <!-- Classes4 -->
                                 <div class="classes">
-
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes4__label">Iniciado</label>
-
                                 </div>
-                                <!--classes5 -->
+                                <!-- Classes5 -->
                                 <div class="classes">
-
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes4__label">Feiticeiro</label>
                                 </div>
                             </div>
                         </div>
-                        <!--antecedente -->
+                        <!-- Antecedente -->
                         <div id="antecedente" class="ficha__dados__antecedentes">
                             <label for="exampleDataList" class="ficha__dados__antecdentes__label">Antecedente</label>
                             <input class="ficha__dados__antecdentes__input" list="antecedenteDatalistOptions">
@@ -261,11 +256,11 @@
                                 <option value="Prisioneiro">
                                 <option value="Refugiado">
                                 <option value="Taverneiro">
-
                             </datalist>
                         </div>
-                        <!--especialização -->
-                        <div id="especializcao" class="ficha__dados__especializacao">
+
+                        <!-- Especialização -->
+                        <div id="especializacao" class="ficha__dados__especializacao">
                             <label for="exampleDataList" class="ficha__dados__especializacao__label">Especialização
                                 1</label>
                             <input class="ficha__dados__especializacao__input" list="specializationDataList">
@@ -291,8 +286,9 @@
                                 <option value="Xamã">
                             </datalist>
                         </div>
-                        <!--especialização 2-->
-                        <div id="especializcao2" class="ficha__dados__especializacao2">
+
+                        <!-- Especialização 2 -->
+                        <div id="especializacao2" class="ficha__dados__especializacao2">
                             <label for="exampleDataList" class="ficha__dados__especializacao2__label">Especialização
                                 2</label>
                             <input class="ficha__dados__especializacao2__input" list="specialization2DataList">
@@ -318,10 +314,11 @@
                                 <option value="Xamã">
                             </datalist>
                         </div>
-                        <!--profissão -->
+
+                        <!-- Profissão -->
                         <div id="profissao" class="ficha__dados__profissao">
                             <label for="exampleDataList" class="ficha__dados__profissao__label">Profissão</label>
-                            <input class="fficha__dados__profissao__label" list="profissaoListOptions">
+                            <input class="ficha__dados__profissao__input" list="profissaoListOptions">
                             <datalist id="profissaoListOptions">
                                 <option value="Acadêmico">
                                 <option value="Alfaiate">
@@ -339,17 +336,16 @@
                                 <option value="Soldado de Aluguel">
                             </datalist>
                         </div>
-
                     </form>
-                    <!--modificadores de acerto e dano -->
-                    <div class="ficha__dados__dano">
 
-                        <!--acerto em base do valor de combate -->
+                    <!-- Modificadores de Acerto e Dano -->
+                    <div class="ficha__dados__dano">
+                        <!-- Acerto em Base do Valor de Combate -->
                         <form class="ficha__dados__acerto__valores">
                             <div class="personagem">
                                 <p>Combate</p> <img src="/assets/icons/shield.png" class="icon" alt="Personagem" />
                             </div>
-                            <!--combate corpo a corpo -->
+                            <!-- Combate corpo a corpo -->
                             <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores__CombateCorpoaCorpo">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Combate Corpo a Corpo__label">Combate Corpo a
@@ -357,14 +353,14 @@
                                 <input type="number" min="0" max="1000000"
                                     class="ficha__dados__acerto__valores__Combate Corpo a Corpo__input" id="inputZip">
                             </div>
-                            <!--combate arcano -->
+                            <!-- Combate arcano -->
                             <div id="combateArcano" class="ficha__dados__acerto__valores__CombateArcano">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Combate Arcano__label">Combate Arcano</label>
                                 <input type="number" min="0" max="1000000"
                                     class="ficha__dados__acerto__valores__Combate Arcano__input" id="inputZip">
                             </div>
-                            <!--combate a distância -->
+                            <!-- Combate a distância -->
                             <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores_Combate a distancia__label">Combate a
@@ -372,81 +368,77 @@
                                 <input type="number" min="0" max="1000000"
                                     class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
                             </div>
-                            <!--defesa -->
-                            <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
+                            <!-- Defesa -->
+                            <div id="valorDeDefesa" class="ficha__dados__acerto__valores__ValorDeDefesa">
                                 <label for="inputZip"
-                                    class="ficha__dados__acerto__valores_Combate a distancia__label">Valor de
+                                    class="ficha__dados__acerto__valores__Valor de Defesa__label">Valor de
                                     Defesa</label>
                                 <input type="number" min="7" max="1000000"
-                                    class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
+                                    class="ficha__dados__acerto__valores__Valor de Defesa__input" id="inputZip">
                             </div>
-                            <!--velocidade -->
-                            <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
+                            <!-- Velocidade -->
+                            <div id="velocidadeDeMovimento"
+                                class="ficha__dados__acerto__valores__VelocidadeDeMovimento">
                                 <label for="inputZip"
-                                    class="ficha__dados__acerto__valores_Combate a distancia__label">Valelocidade de
+                                    class="ficha__dados__acerto__valores__Velocidade de Movimento__label">Velocidade de
                                     Movimento</label>
                                 <input type="number" min="1,5" max="1000000"
-                                    class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
+                                    class="ficha__dados__acerto__valores__Velocidade de Movimento__input" id="inputZip">
                             </div>
                         </form>
-
-
-
                     </div>
+
                     <form class="ficha__dados__dano__valores" id="dano">
                         <div class="personagem">
                             <p>Dano</p> <img src="/assets/icons/piercing.png" class="icon" alt="Personagem" />
                         </div>
-                        <!--dano fisico -->
+                        <!-- Dano Físico -->
                         <div id="danoFisico" class="habilidade1">
                             <label for="inputZip" class="ficha__dados__danovalores__danoFisico__label">Dano
                                 Físico</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
-                        <!--dano mágico -->
+                        <!-- Dano Mágico -->
                         <div id="danoMagico" class="habilidade2">
                             <label for="inputZip" class="ficha__dados__dano__valores__danoMagico__label">Dano
                                 Mágico</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
-                        <!--dano bonus -->
+                        <!-- Dano Bônus -->
                         <div id="danoBonus" class="habilidade1">
-                            <label for="inputZip" class="ficha__dados__danovalores__danoBonus__label">Dano Bonus</label>
+                            <label for="inputZip" class="ficha__dados__danovalores__danoBonus__label">Dano Bônus</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
-
                     </form>
+
                     <div class='dinheiro'>
                         <div class="personagem">
                             <p>Dinheiro</p> <img src="/assets/icons/money-bag.png" class="icon" alt="Personagem" />
                         </div>
-                        <!--ouro -->
+                        <!-- Moedas de Ouro -->
                         <div id="gold" class="habilidade1">
                             <label for="inputZip" class="ouro">Moedas de Ouro</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
-                        <!--prata -->
-                        <div id="gold" class="habilidade2">
+                        <!-- Moedas de Prata -->
+                        <div id="silver" class="habilidade2">
                             <label for="inputZip" class="prata">Moedas de Prata</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
-                        <!--bronze -->
-                        <div id="gold" class="habilidade1">
+                        <!-- Moedas de Bronze -->
+                        <div id="bronze" class="habilidade1">
                             <label for="inputZip" class="bronze">Moedas de Bronze</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
                     </div>
                 </main>
-
-
             </form>
-
             <!--Hablidades -->
             <div class="quadroHabilidade">
                 <div class="personagem">
@@ -843,9 +835,9 @@
                     </div>
 
                 </div>
-  
+
             </div>
-            <div>
+            <div class="equipamento2">
                 <div class="defesa">
 
                     <div class="armaDano">
@@ -930,13 +922,15 @@
                         <input type="number" class="menor">
                     </div>
                 </div>
-                <div class="regalias">
-                    <p>Regalias de Espécie</p>
 
-                    <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
-                </div>
+            </div>
+            <div class="regalias">
+                <p>Regalias de Espécie</p>
+
+                <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
             </div>
             <div class="regalias" style="margin: 20px 0;">
+
                 <p>Regalias de Classe</p>
 
                 <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
@@ -951,7 +945,7 @@
     </div>
 
 </body>
-<script src="/assets/js/main.js" ></script>
+<script src="/assets/js/main.js"></script>
 
 
 </html>

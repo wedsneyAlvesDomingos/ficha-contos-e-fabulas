@@ -1,8 +1,3 @@
-const express = require('express');
-const sqlite3 = require('sqlite3').verbose();
-const app = express();
-const port = 3000;
-
 
 var menuOpen = false;
 
@@ -61,4 +56,30 @@ window.onclick = function(event) {
     }
 }
 
-
+function salvaFicha() {
+    // Add an event listener to the form submission
+    document.querySelector('form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent the default form submission
+       
+      // Here, you can gather form data and send it to your server or perform other actions
+      const formData = new FormData(this);
+  
+      // Example: Send form data to the server using fetch
+      fetch('/submit', {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => {
+          if (response.ok) {
+            // The form data was successfully sent to the server
+            console.log('Form data sent successfully.');
+          } else {
+            // Handle errors
+            console.error('Error sending form data to the server.');
+          }
+        })
+        .catch((error) => {
+          console.error('An error occurred:', error);
+        });
+    });
+  }
