@@ -6,12 +6,20 @@ body {
    flex-direction: column;
     margin: auto;
     box-sizing: border-box;
-    background-image: url('/Mapa_Bokislad.jpg');
+    background-image: url('/imagens/Mapa_Bokislad.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     font-size: 1em;
     color: black;
 }
 
-
+.canva{
+    background: rgba(255, 255, 255, 0.548);
+   border-radius: 10px;
+    padding: 0;
+    top: 0;
+    margin:0 auto;
+}
 
 a {
     text-decoration: none;
@@ -22,6 +30,7 @@ a {
     background-color: #cecece;
     color: #fff;
     padding: 10px;
+ 
 
 }
 

@@ -20,7 +20,7 @@
 <body>
     <div class="navbar">
         <ul>
-            <li><a href="Landing.html">Página Inicial</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
             <li><a href="#">Sobre</a></li>
             <li><a target="_blank"
                     href="https://docs.google.com/document/d/e/2PACX-1vR_z-Kb42pao_eJw9PpyvKgvocEi-JkniauVl2d7pND4EkqmUXVbVaPk1rWfLWeQUXJ94dkd0qunmI_/pub">Sistema</a>
@@ -40,7 +40,7 @@
                 <p class="menu-item" onclick="loadContent('fichas.html')" href="#">Fichas</p>
             </li>
             <li>
-                <p class="menu-item" onclick="loadContent('conteudo2')" href="#">Anotações</p>
+                <p class="menu-item" onclick="loadContent('anotações.html')" href="#">Anotações</p>
             </li>
             <li>
                 <p class="menu-item" onclick="loadContent('conteudo3')" href="#">Mapas</p>
@@ -52,7 +52,17 @@
         </ul>
     </div>
     <div class="content" id="contentArea">
+        <div style="display: flex;flex-flow: column wrap; justify-content: baseline;">
+            <div style="display: flex;justify-content: center;gap: 10px;">
+                <button id="eraseButton" style="">Limpar</button>
+                <div style="display: flex;flex-flow: column wrap;justify-content: center;">
+                    <label for="colorPicker">Cor do pincel</label>
+                    <input type="color" id="colorPicker"></input>
+                </div>
+            </div>
 
+            <canvas id="canvas" width="400" height="400" class="canva"></canvas>
+        </div>
     </div>
     <!-- Modal -->
     <div id="modal" class="modal">
@@ -65,7 +75,7 @@
 
 
             <!--corpo da ficha -->
-            <form class="grid-ficha">
+            <form class="grid-ficha" action="/submit" method="post">
                 <main class="nomeEspecie">
                     <div class="personagem">
                         <p>Personagem</p> <img src="/assets/icons/body-scan.png" class="icon" alt="Personagem" />
@@ -946,6 +956,7 @@
 
 </body>
 <script src="/assets/js/main.js"></script>
+<script src="/assets/js/canvas.js"></script>
 
 
 </html>
