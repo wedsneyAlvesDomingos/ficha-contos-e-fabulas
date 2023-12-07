@@ -6,7 +6,7 @@ body {
    flex-direction: column;
     margin: auto;
     box-sizing: border-box;
-    background-image: url('/imagens/Mapa_Bokislad.jpg');
+    background-image: url('../../imagens/Mapa_Bokislad.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 1em;
@@ -99,9 +99,10 @@ a {
         .modal {
             display: none;
             position: fixed;
+            margin-left: 200px;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 90%;
             height: 100%;
             overflow: scroll;
             background-color: rgba(0, 0, 0, 0.5);

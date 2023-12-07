@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lâmina Do Oculto</title>
 
-    <link rel="stylesheet" href="/assets/css/character_sheet.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/character_sheet.css" type="text/css">
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 
 
     <link
@@ -37,13 +37,13 @@
                 <p class="menu-item" onclick="closeSideMenu()">X</p>
             </li>
             <li>
-                <p class="menu-item" onclick="loadContent('fichas.html')" href="#">Fichas</p>
+                <p class="menu-item" onclick="loadContent('fichas')" href="#">Fichas</p>
             </li>
             <li>
-                <p class="menu-item" onclick="loadContent('anotações.html')" href="#">Anotações</p>
+                <p class="menu-item" onclick="loadContent('notes')" href="#">Anotações</p>
             </li>
             <li>
-                <p class="menu-item" onclick="loadContent('conteudo3')" href="#">Mapas</p>
+                <p class="menu-item" onclick="loadContent('maps')" href="#">Mapas</p>
             </li>
             <li>
                 <p class="menu-item" onclick="loadContent('conteudo4')" href="#">Classes</p>
@@ -52,6 +52,7 @@
         </ul>
     </div>
     <div class="content" id="contentArea">
+
         <div style="display: flex;flex-flow: column wrap; justify-content: baseline;">
             <div style="display: flex;justify-content: center;gap: 10px;">
                 <button id="eraseButton" style="">Limpar</button>
@@ -71,14 +72,14 @@
 
 
         <div class="modal-content">
-            <button onclick="salvaFicha()">Salvar</button>
+            <button onclick="">Salvar</button>
 
 
             <!--corpo da ficha -->
             <form class="grid-ficha" action="/submit" method="post">
                 <main class="nomeEspecie">
                     <div class="personagem">
-                        <p>Personagem</p> <img src="/assets/icons/body-scan.png" class="icon" alt="Personagem" />
+                        <p>Personagem</p> <img src="../assets/icons/body-scan.png" class="icon" alt="Personagem" />
                     </div>
 
                     <div class="vidaMagia">
@@ -353,7 +354,7 @@
                         <!-- Acerto em Base do Valor de Combate -->
                         <form class="ficha__dados__acerto__valores">
                             <div class="personagem">
-                                <p>Combate</p> <img src="/assets/icons/shield.png" class="icon" alt="Personagem" />
+                                <p>Combate</p> <img src="../assets/icons/shield.png" class="icon" alt="Personagem" />
                             </div>
                             <!-- Combate corpo a corpo -->
                             <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores__CombateCorpoaCorpo">
@@ -400,7 +401,7 @@
 
                     <form class="ficha__dados__dano__valores" id="dano">
                         <div class="personagem">
-                            <p>Dano</p> <img src="/assets/icons/piercing.png" class="icon" alt="Personagem" />
+                            <p>Dano</p> <img src="../assets/icons/piercing.png" class="icon" alt="Personagem" />
                         </div>
                         <!-- Dano Físico -->
                         <div id="danoFisico" class="habilidade1">
@@ -426,7 +427,7 @@
 
                     <div class='dinheiro'>
                         <div class="personagem">
-                            <p>Dinheiro</p> <img src="/assets/icons/money-bag.png" class="icon" alt="Personagem" />
+                            <p>Dinheiro</p> <img src="../assets/icons/money-bag.png" class="icon" alt="Personagem" />
                         </div>
                         <!-- Moedas de Ouro -->
                         <div id="gold" class="habilidade1">
@@ -452,13 +453,13 @@
             <!--Hablidades -->
             <div class="quadroHabilidade">
                 <div class="personagem">
-                    <p class="tituloHabilidade">Habilidades</p> <img src="/assets/icons/spellbook.png" class="icon"
+                    <p class="tituloHabilidade">Habilidades</p> <img src="../assets/icons/spellbook.png" class="icon"
                         alt="Personagem" />
                 </div>
                 <div id="fisico">
 
                     <div class="personagem">
-                        <p>Físico</p> <img src="/assets/icons/psychology.png" class="icon" alt="Personagem" />
+                        <p>Físico</p> <img src="../assets/icons/psychology.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <label for="inputZip">Acrobacia</label>
@@ -496,7 +497,7 @@
                 </div>
                 <div id="conhecimento">
                     <div class="personagem">
-                        <p>Conhecimento</p> <img src="/assets/icons/graphic-design.png" class="icon" alt="Personagem" />
+                        <p>Conhecimento</p> <img src="../assets/icons/graphic-design.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <label for="inputZip">História</label>
@@ -532,7 +533,7 @@
 
                 <div id="exploracao">
                     <div class="personagem">
-                        <p>Exploração</p> <img src="/assets/icons/adventure.png" class="icon" alt="Personagem" />
+                        <p>Exploração</p> <img src="../assets/icons/adventure.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <label for="inputZip">Armadilhas</label>
@@ -582,7 +583,7 @@
 
                 <div id="arcana">
                     <div class="personagem">
-                        <p>Arcana</p> <img src="/assets/icons/fantasy.png" class="icon" alt="Personagem" />
+                        <p>Arcana</p> <img src="../assets/icons/fantasy.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <label for="inputZip">Arcanismo</label>
@@ -615,7 +616,7 @@
                 </div>
                 <div id="social">
                     <div class="personagem">
-                        <p>Social</p> <img src="/assets/icons/comic.png" class="icon" alt="Personagem" />
+                        <p>Social</p> <img src="../assets/icons/comic.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <label for="inputZip">Enganação</label>
@@ -644,7 +645,7 @@
                 </div>
                 <div id="condicoes">
                     <div class="personagem">
-                        <p>Condições</p> <img src="/assets/icons/mind-control.png" class="icon" alt="Personagem" />
+                        <p>Condições</p> <img src="../assets/icons/mind-control.png" class="icon" alt="Personagem" />
                     </div>
                     <div class="habilidade2">
                         <div>
@@ -762,7 +763,7 @@
             </div>
             <div class="equipamento">
                 <div class="personagem" id="equipamento">
-                    <p>Equipamentos</p> <img src="/assets/icons/bandit.png" class="icon" alt="Personagem" />
+                    <p>Equipamentos</p> <img src="../assets/icons/bandit.png" class="icon" alt="Personagem" />
                 </div>
                 <div class="itemMagico">
                     <div class="armaDano">
@@ -955,8 +956,8 @@
     </div>
 
 </body>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/canvas.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/canvas.js"></script>
 
 
 </html>
