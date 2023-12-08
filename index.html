@@ -82,41 +82,8 @@
                         <p>Personagem</p> <img src="public/assets/icons/body-scan.png" class="icon" alt="Personagem" />
                     </div>
 
-                    <div class="vidaMagia">
-                        <div class="vida">
-                            <div class="status">
-                                <label for="inputVidaMaxima">Vida Máxima</label>
-                                <input type="number" class="inputVidaMaxima" min="0">
-                            </div>
-                            <div class="status">
-                                <label for="inputVida">Vida Atual</label>
-                                <input type="number" class="inputVida" min="0">
-                            </div>
-                        </div>
-                        <div class="magia">
-                            <div class="status">
-                                <label for="inputMagiaMaxima">Magia Máxima</label>
-                                <input type="number" class="inputMagiaMaxima" min="0">
-                            </div>
-                            <div class="status">
-                                <label for="inputMagia">Magia Atual</label>
-                                <input type="number" class="inputMagia" min="0">
-                            </div>
-                        </div>
-                        <div class="estamina">
-                            <div class="status">
-                                <label for="inputEstaminaMaxima">Estamina Máxima</label>
-                                <input type="number" class="inputEstaminaMaxima" min="0">
-                            </div>
-                            <div class="status">
-                                <label for="inputEstamina">Estamina Atual</label>
-                                <input type="number" class="inputEstamina" min="0">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Nome -->
-                    <div class="ficha__nome">
+                       <!-- Nome -->
+                       <div class="ficha__nome-personagem">
                         <label class="ficha__nome__label">Nome</label>
                         <input type="text" class="ficha__nome__input">
                     </div>
@@ -177,7 +144,7 @@
                         <div class="classes1234">
                             <!-- Classes -->
                             <div>
-                                <div class="classes" id="fantasma">
+                                <div class="classes" style="display:none;">
                                     <input class="checkbox_round" type="checkbox" id="checkbox_round">
                                     <label for="exampleDataList" class="ficha__classes3__label">Aprendiz</label>
                                 </div>
@@ -348,6 +315,41 @@
                             </datalist>
                         </div>
                     </form>
+
+                    <div class="vidaMagia">
+                        <div class="vida">
+                            <div class="status">
+                                <label for="inputVidaMaxima">Vida Máxima</label>
+                                <input type="number" class="inputVidaMaxima" min="0">
+                            </div>
+                            <div class="status">
+                                <label for="inputVida">Vida Atual</label>
+                                <input type="number" class="inputVida" min="0">
+                            </div>
+                        </div>
+                        <div class="magia">
+                            <div class="status">
+                                <label for="inputMagiaMaxima">Magia Máxima</label>
+                                <input type="number" class="inputMagiaMaxima" min="0">
+                            </div>
+                            <div class="status">
+                                <label for="inputMagia">Magia Atual</label>
+                                <input type="number" class="inputMagia" min="0">
+                            </div>
+                        </div>
+                        <div class="estamina">
+                            <div class="status">
+                                <label for="inputEstaminaMaxima">Estamina Máxima</label>
+                                <input type="number" class="inputEstaminaMaxima" min="0">
+                            </div>
+                            <div class="status">
+                                <label for="inputEstamina">Estamina Atual</label>
+                                <input type="number" class="inputEstamina" min="0">
+                            </div>
+                        </div>
+                    </div>
+
+                 
 
                     <!-- Modificadores de Acerto e Dano -->
                     <div class="ficha__dados__dano">

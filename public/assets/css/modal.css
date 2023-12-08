@@ -35,21 +35,21 @@
     display: flex;
     flex-flow: row wrap;
     width: 100% ;
-    justify-content: space-between;
+    justify-content: space-around;
     gap:1rem;
 }
 .vidaMagia{
     display: flex;
     flex-flow: row nowrap;
     width: 100% ;
-    justify-content: space-between;
+    justify-content: space-around;
     gap:1rem;
 }
 .vida, .magia, .estamina, .complementos{
     display: flex;
     flex-flow: column nowrap;
     gap:0.5rem;
-    width:30%;
+    width:33%;
 }
 
 .classes1234{
@@ -57,4 +57,17 @@
     flex-flow: row wrap;
     gap:0.5rem;
     width:40%;
+}
+
+.ficha__nome{
+    display: flex;
+    justify-content: space-between;
+}
+.ficha__nome-personagem{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ficha__nome__input{
+    width:90%
 }
