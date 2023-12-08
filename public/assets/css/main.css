@@ -124,10 +124,27 @@ a {
 
         .grid-ficha {
             display: flex;
+            flex-flow: row nowrap;
+            width: 100% ;
+            justify-content: space-between;
+            gap:1rem;
+        }
+        .nomeEspecie{
+            display: flex;
             flex-flow: row wrap;
             width: 100% ;
             justify-content: space-between;
+            gap:1rem;
         }
-        .status{
-            width: 50%;
+        .vidaMagia{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100% ;
+            justify-content: space-between;
+            gap:1rem;
+        }
+        .vida, .magia, .estamina{
+            display: flex;
+            flex-flow: column nowrap;
+            gap:0.5rem;
         }
