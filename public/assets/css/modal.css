@@ -1,0 +1,60 @@
+ /* Estilo para esconder o modal por padrão */
+ .modal {
+    display: none;
+    position: fixed;
+    margin: 0 4rem;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    overflow: scroll;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Estilo para o conteúdo do modal */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-ficha {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100% ;
+    justify-content: space-between;
+    gap:1rem;
+}
+.nomeEspecie{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100% ;
+    justify-content: space-between;
+    gap:1rem;
+}
+.vidaMagia{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100% ;
+    justify-content: space-between;
+    gap:1rem;
+}
+.vida, .magia, .estamina, .complementos{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:0.5rem;
+    width:30%;
+}
+
+.classes1234{
+    display: flex;
+    flex-flow: row wrap;
+    gap:0.5rem;
+    width:40%;
+}
