@@ -42,7 +42,7 @@ function loadContent(content) {
 </div>
 </section>`;
     else if (content === 'maps')
-    contentArea.innerHTML = `<img style="width:50%;" src="../imagens/bokislad 2.0 (1).jpg">`
+    contentArea.innerHTML = `<img style="width:50%;" src="public/imagens/bokislad 2.0 (1).jpg">`
 
 
 }
