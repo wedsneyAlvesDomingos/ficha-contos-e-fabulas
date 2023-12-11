@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="public/assets/css/character_sheet.css" type="text/css">
     <link rel="stylesheet" href="public/assets/css/modal.css" type="text/css">
     <link rel="stylesheet" href="public/assets/css/main.css">
+    <link rel="stylesheet" href="public/assets/css/reset.css">
 
 
     <link
@@ -67,23 +68,23 @@
     </div>
     <!-- Modal -->
     <div id="modal" class="modal">
-        <button onclick="fechaFichaModal()" style="margin: auto;">Fechar</button>
+
 
 
 
         <div class="modal-content">
             <button onclick="salvaFicha()">Salvar</button>
-
+            <button onclick="fechaFichaModal()" class="botaoXModal">X</button>
 
             <!--corpo da ficha -->
-            <form class="grid-ficha" >
+            <form class="grid-ficha">
                 <main class="nomeEspecie">
                     <div class="personagem">
                         <p>Personagem</p> <img src="public/assets/icons/body-scan.png" class="icon" alt="Personagem" />
                     </div>
 
-                       <!-- Nome -->
-                       <div class="ficha__nome-personagem">
+                    <!-- Nome -->
+                    <div class="ficha__nome-personagem">
                         <label class="ficha__nome__label">Nome</label>
                         <input type="text" class="ficha__nome__input">
                     </div>
@@ -349,59 +350,59 @@
                         </div>
                     </div>
 
-                 
+
 
                     <!-- Modificadores de Acerto e Dano -->
-                    <div class="ficha__dados__dano">
+                    <div class="ficha__dados__secundarios">
                         <!-- Acerto em Base do Valor de Combate -->
-                        <form class="ficha__dados__acerto__valores">
+                        <form class="ficha__dados__acerto">
                             <div class="personagem">
-                                <p>Combate</p> <img src="public/assets/icons/shield.png" class="icon" alt="Personagem" />
+                                <p>Combate</p> <img src="public/assets/icons/shield.png" class="icon"
+                                    alt="Personagem" />
                             </div>
                             <!-- Combate corpo a corpo -->
-                            <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores__CombateCorpoaCorpo">
+                            <div id="combateCorpoACorpo" class="ficha__dados__acerto__valores">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Combate Corpo a Corpo__label">Combate Corpo a
                                     Corpo</label>
-                                <input type="number" min="0" max="1000000"
-                                    class="ficha__dados__acerto__valores__Combate Corpo a Corpo__input" id="inputZip">
+                                <input type="number" min="0" max="1000000" class="ficha__dados__acerto__valores__input"
+                                    id="inputZip">
                             </div>
                             <!-- Combate arcano -->
-                            <div id="combateArcano" class="ficha__dados__acerto__valores__CombateArcano">
+                            <div id="combateArcano" class="ficha__dados__acerto__valores">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Combate Arcano__label">Combate Arcano</label>
-                                <input type="number" min="0" max="1000000"
-                                    class="ficha__dados__acerto__valores__Combate Arcano__input" id="inputZip">
+                                <input type="number" min="0" max="1000000" class="ficha__dados__acerto__valores__input"
+                                    id="inputZip">
                             </div>
                             <!-- Combate a distância -->
-                            <div id="combateADistancia" class="ficha__dados__acerto__valores__Combateadistancia">
+                            <div id="combateADistancia" class="ficha__dados__acerto__valores">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores_Combate a distancia__label">Combate a
                                     Distância</label>
-                                <input type="number" min="0" max="1000000"
-                                    class="ficha__dados__acerto__valores_Combate a distancia__input" id="inputZip">
+                                <input type="number" min="0" max="1000000" class="ficha__dados__acerto__valores__input"
+                                    id="inputZip">
                             </div>
                             <!-- Defesa -->
-                            <div id="valorDeDefesa" class="ficha__dados__acerto__valores__ValorDeDefesa">
+                            <div id="valorDeDefesa" class="ficha__dados__acerto__valores">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Valor de Defesa__label">Valor de
                                     Defesa</label>
-                                <input type="number" min="7" max="1000000"
-                                    class="ficha__dados__acerto__valores__Valor de Defesa__input" id="inputZip">
+                                <input type="number" min="7" max="1000000" class="ficha__dados__acerto__valores__input"
+                                    id="inputZip">
                             </div>
                             <!-- Velocidade -->
-                            <div id="velocidadeDeMovimento"
-                                class="ficha__dados__acerto__valores__VelocidadeDeMovimento">
+                            <div id="velocidadeDeMovimento" class="ficha__dados__acerto__valores">
                                 <label for="inputZip"
                                     class="ficha__dados__acerto__valores__Velocidade de Movimento__label">Velocidade de
                                     Movimento</label>
                                 <input type="number" min="1,5" max="1000000"
-                                    class="ficha__dados__acerto__valores__Velocidade de Movimento__input" id="inputZip">
+                                    class="ficha__dados__acerto__valores__input" id="inputZip">
                             </div>
                         </form>
                     </div>
 
-                    <form class="ficha__dados__dano__valores" id="dano">
+                    <form class="ficha__dados__secundarios" id="dano">
                         <div class="personagem">
                             <p>Dano</p> <img src="public/assets/icons/piercing.png" class="icon" alt="Personagem" />
                         </div>
@@ -413,7 +414,7 @@
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
                         <!-- Dano Mágico -->
-                        <div id="danoMagico" class="habilidade2">
+                        <div id="danoMagico" class="habilidade1">
                             <label for="inputZip" class="ficha__dados__dano__valores__danoMagico__label">Dano
                                 Mágico</label>
                             <input type="number" min="0" max="1000000"
@@ -427,9 +428,10 @@
                         </div>
                     </form>
 
-                    <div class='dinheiro'>
+                    <div class='ficha__dados__secundarios'>
                         <div class="personagem">
-                            <p>Dinheiro</p> <img src="public/assets/icons/money-bag.png" class="icon" alt="Personagem" />
+                            <p>Dinheiro</p> <img src="public/assets/icons/money-bag.png" class="icon"
+                                alt="Personagem" />
                         </div>
                         <!-- Moedas de Ouro -->
                         <div id="gold" class="habilidade1">
@@ -438,7 +440,7 @@
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
                         </div>
                         <!-- Moedas de Prata -->
-                        <div id="silver" class="habilidade2">
+                        <div id="silver" class="habilidade1">
                             <label for="inputZip" class="prata">Moedas de Prata</label>
                             <input type="number" min="0" max="1000000"
                                 class="ficha__dados__danovalores__danoFisico__input" id="inputZip">
@@ -454,320 +456,331 @@
             </form>
             <!--Hablidades -->
             <div class="quadroHabilidade">
-                <div class="personagem">
-                    <p class="tituloHabilidade">Habilidades</p> <img src="public/assets/icons/spellbook.png" class="icon"
-                        alt="Personagem" />
-                </div>
-                <div id="fisico">
 
+                <div class="fileiraHabilidades">
                     <div class="personagem">
-                        <p>Físico</p> <img src="public/assets/icons/psychology.png" class="icon" alt="Personagem" />
+                        <p class="tituloHabilidade">Habilidades</p> <img src="public/assets/icons/spellbook.png"
+                            class="icon" alt="Personagem" />
                     </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Acrobacia</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Agilidade</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Atletismo</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Combate Corpo a Corpo</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Combate a Distância</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Destreza</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Força</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Fortitude</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
+                    <div id="fisico">
 
-                </div>
-                <div id="conhecimento">
-                    <div class="personagem">
-                        <p>Conhecimento</p> <img src="public/assets/icons/graphic-design.png" class="icon" alt="Personagem" />
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">História</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Intuição</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Jurisprudência</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Natureza</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Medicina</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-
-                    <div class="habilidade2">
-                        <label for="inputZip">Tecnologia</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Teologia</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-
-                </div>
-
-                <div id="exploracao">
-                    <div class="personagem">
-                        <p>Exploração</p> <img src="public/assets/icons/adventure.png" class="icon" alt="Personagem" />
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Armadilhas</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Condução Veic. Aquáticos</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Condução Veic. Terrestres</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Condução Exótica</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Furtividade</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Investigação</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Lidar Com Animais</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Navegação</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Percepção</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Rastreamento</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Sobrevivência</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                </div>
-
-                <div id="arcana">
-                    <div class="personagem">
-                        <p>Arcana</p> <img src="public/assets/icons/fantasy.png" class="icon" alt="Personagem" />
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Arcanismo</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Apuração itens Magicos</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Alquimia</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Combate Arcano</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Identificar Armad. Magicas</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Ocultismo</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Ritualismo</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                </div>
-                <div id="social">
-                    <div class="personagem">
-                        <p>Social</p> <img src="public/assets/icons/comic.png" class="icon" alt="Personagem" />
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Enganação</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Intimidação</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip">Negociação</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Performance</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade2">
-                        <label for="inputZip"> Persuasão</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                    <div class="habilidade1">
-                        <label for="inputZip">Sedução</label>
-                        <input type="number" class="habilidade" min="0" max="15" id="inputZip">
-                    </div>
-                </div>
-                <div id="condicoes">
-                    <div class="personagem">
-                        <p>Condições</p> <img src="public/assets/icons/mind-control.png" class="icon" alt="Personagem" />
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">A Beira da Morte</label>
+                        <div class="personagem">
+                            <p>Físico</p> <img src="public/assets/icons/psychology.png" class="icon" alt="Personagem" />
                         </div>
-                        <div>
-                            <label for="checkbox_round">Aterrorizado</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Acrobacia</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Atordoado</label>
+                        <div class="habilidade1">
+                            <label for="inputZip">Agilidade</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                        <div>
-                            <label for="checkbox_round">Cansado</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Atletismo</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Cansado2</label>
+                        <div class="habilidade1">
+                            <label for="inputZip">Combate Corpo a Corpo</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                        <div>
-                            <label for="checkbox_round">Cansado 3</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Combate a Distância</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round"> Cansado 4</label>
+                        <div class="habilidade1">
+                            <label for="inputZip">Destreza</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                        <div>
-                            <label for="checkbox_round">Cego</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Força</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Congelando </label>
-                        </div>
-                        <div>
-                            <label for="checkbox_round">Deitado</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                        </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Devagar</label>
-                        </div>
-                        <div>
-                            <label for="checkbox_round">Enfraquecido</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                        </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Envenenado</label>
-                        </div>
-                        <div>
-                            <label for="checkbox_round">Escondido</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                        </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Paralizado </label>
-                        </div>
-                        <div>
-                            <label for="checkbox_round">Queimando</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Fortitude</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
 
                     </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round">Queimando 2 </label>
+                    <div id="conhecimento">
+                        <div class="personagem">
+                            <p>Conhecimento</p> <img src="public/assets/icons/graphic-design.png" class="icon"
+                                alt="Personagem" />
                         </div>
-                        <div>
-                            <label for="checkbox_round">Queimando 3</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">História</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Intuição</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Jurisprudência</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Natureza</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Medicina</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+
+                        <div class="habilidade1">
+                            <label for="inputZip">Tecnologia</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Teologia</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
 
                     </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round"> Restringido</label>
+
+                    <div id="exploracao">
+                        <div class="personagem">
+                            <p>Exploração</p> <img src="public/assets/icons/adventure.png" class="icon"
+                                alt="Personagem" />
                         </div>
-                        <div>
-                            <label for="checkbox_round">Surpreso</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Armadilhas</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                    </div>
-                    <div class="habilidade2">
-                        <div>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
-                            <label for="checkbox_round"> Sangrando</label>
+                        <div class="habilidade1">
+                            <label for="inputZip">Condução Veic. Aquáticos</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
-                        <div>
-                            <label for="checkbox_round">Surdo</label>
-                            <input type="checkbox" class="habilidade" id="checkbox_round">
+                        <div class="habilidade1">
+                            <label for="inputZip">Condução Veic. Terrestres</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Condução Exótica</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Furtividade</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Investigação</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Lidar Com Animais</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Navegação</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Percepção</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Rastreamento</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Sobrevivência</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
                         </div>
                     </div>
                 </div>
+
+
+                <div class="fileiraHabilidades">
+                    <div id="arcana">
+                        <div class="personagem">
+                            <p>Arcana</p> <img src="public/assets/icons/fantasy.png" class="icon" alt="Personagem" />
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Arcanismo</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Apuração itens Magicos</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Alquimia</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Combate Arcano</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Identificar Armad. Magicas</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Ocultismo</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Ritualismo</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                    </div>
+                    <div id="social">
+                        <div class="personagem">
+                            <p>Social</p> <img src="public/assets/icons/comic.png" class="icon" alt="Personagem" />
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Enganação</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Intimidação</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Negociação</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Performance</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip"> Persuasão</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                        <div class="habilidade1">
+                            <label for="inputZip">Sedução</label>
+                            <input type="number" class="habilidade" min="0" max="15" id="inputZip">
+                        </div>
+                    </div>
+                    <div id="condicoes">
+                        <div class="personagem">
+                            <p>Condições</p> <img src="public/assets/icons/mind-control.png" class="icon"
+                                alt="Personagem" />
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">A Beira da Morte</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Aterrorizado</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Atordoado</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Cansado</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Cansado2</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Cansado 3</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round"> Cansado 4</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Cego</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Congelando </label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Deitado</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Devagar</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Enfraquecido</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Envenenado</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Escondido</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Paralizado </label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Queimando</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round">Queimando 2 </label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Queimando 3</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round"> Restringido</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Surpreso</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                        <div class="habilidade1">
+                            <div>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                                <label for="checkbox_round"> Sangrando</label>
+                            </div>
+                            <div>
+                                <label for="checkbox_round">Surdo</label>
+                                <input type="checkbox" class="habilidade" id="checkbox_round">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="equipamento">
-                <div class="personagem" id="equipamento">
-                    <p>Equipamentos</p> <img src="public/assets/icons/bandit.png" class="icon" alt="Personagem" />
-                </div>
+
                 <div class="itemMagico">
+                    <div class="personagem" id="equipamento">
+                        <p>Equipamentos</p> <img src="public/assets/icons/bandit.png" class="icon" alt="Personagem" />
+                    </div>
                     <div class="armaDano">
                         <p>Itens Mágicos</p>
                     </div>
@@ -937,22 +950,25 @@
                 </div>
 
             </div>
-            <div class="regalias">
-                <p>Regalias de Espécie</p>
-
-                <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
+            <div class="areaReaglias">
+                <div class="regalias">
+                    <p>Regalias de Espécie</p>
+    
+                    <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
+                </div>
+                <div class="regalias">
+    
+                    <p>Regalias de Classe</p>
+    
+                    <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
+                </div>
+                <div class="regalias">
+                    <p>Regalias de Profissao</p>
+    
+                    <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
+                </div>
             </div>
-            <div class="regalias" style="margin: 20px 0;">
-
-                <p>Regalias de Classe</p>
-
-                <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
-            </div>
-            <div class="regalias">
-                <p>Regalias de Profissao</p>
-
-                <textarea name="Regalias-de-Espécie" id="especieReg" cols="30" rows="10"></textarea>
-            </div>
+            
 
         </div>
     </div>
@@ -960,4 +976,5 @@
 </body>
 <script src="public/assets/js/canvas.js"></script>
 <script src="public/assets/js/main.js"></script>
+
 </html>

@@ -22,8 +22,15 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10px;  
+    margin-bottom: 30px;
 }
+/* Botões de fechar e salvar */
+.botaoXModal{
 
+}
+/* Ficha */
 .grid-ficha {
     display: flex;
     flex-flow: row nowrap;
@@ -31,12 +38,27 @@
     justify-content: space-between;
     gap:1rem;
 }
+.personagem{
+    display: flex;
+    flex-flow: row nowrap;
+    gap:10px;
+    align-items: center;
+}
+.personagem p{
+    font-size: 1.5em;
+}
+.icon{
+    width: 35.7px;
+    height: 35.7px;
+}
+
 .nomeEspecie{
     display: flex;
     flex-flow: row wrap;
     width: 100% ;
     justify-content: space-around;
     gap:1rem;
+    padding: 10px 0;
 }
 .vidaMagia{
     display: flex;
@@ -44,12 +66,14 @@
     width: 100% ;
     justify-content: space-around;
     gap:1rem;
+    padding: 10px 0;
 }
 .vida, .magia, .estamina, .complementos{
     display: flex;
     flex-flow: column nowrap;
     gap:0.5rem;
     width:33%;
+    padding: 10px 0;
 }
 
 .classes1234{
@@ -70,4 +94,107 @@
 }
 .ficha__nome__input{
     width:90%
+}
+.ficha__dados__secundarios{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 25%;
+    padding: 10px 0;
+}
+
+
+.ficha__dados__acerto{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    
+}
+.ficha__dados__acerto__valores{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-between;
+   
+}
+.ficha__dados__acerto__valores__input{
+    width:15%;
+    
+}
+.quadrohabilidade{
+    display: flex;
+    flex-flow: row wrap;
+    width:90%;
+    justify-content: center;
+    gap:10%;
+    margin: auto;
+}
+.fileiraHabilidades{
+    width: 30%;
+}
+
+#fisico, #conhecimento, #exploracao, #arcana, #social, #condicoes{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 5px;
+    padding: 10px 0;
+}
+.habilidade1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.habilidade1 div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 32px;
+    width:40%;
+}
+.habilidade{
+    width:10%
+}
+.equipamento, .equipamento2{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90% ;
+    margin: auto;
+    gap:1rem;
+    padding: 10px 0;
+}
+input{
+    width: 40%;
+}
+.menor{
+    width: 30%;
+}
+.itemmagico, .armas, .mochila, .defesa{
+    margin: auto;
+    width: 40%;
+    padding: 5px;
+}
+.armadano{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    padding: 5px;
+    gap: 10px;
+   
+}
+.areaReaglias{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    width: 100%;
+}
+.regalias{
+    width: 100%;
+}
+#especieReg{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    font-size: 1rem;
+    height:400px;
 }
